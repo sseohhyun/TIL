@@ -166,7 +166,7 @@ print_info(name='Eve', age=30)  # {'name': 'Eve', 'age': 30}
 - global
 - built-in
 
-# os를 조작하는 방법
+<!-- # os를 조작하는 방법
 # 서브프로세스를 실행하는 방법
 
 # 과목
@@ -179,5 +179,5 @@ print_info(name='Eve', age=30)  # {'name': 'Eve', 'age': 30}
   # base_url = "https~~// {subject}_{seperator}_{stage}/
 
 # 현재 위치를 기준으로,
-# 최상위 폴더를 제외한 모든 폴더를 순회하며 (모든 폴더는 아마 list)
+# 최상위 폴더를 제외한 모든 폴더를 순회하며 (모든 폴더는 아마 list) -->
   
