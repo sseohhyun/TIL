@@ -1,0 +1,68 @@
+<!-- 문제
+이대로 명함을 인쇄하게 되면, 중요한 내용은 명함의 크기를 벗어나 버리게 된다. 모든 문구들이 테두리 내부에 위치 할 수 있도록 적절한 스타일링을 작성한다. 아래 요구사항에 맞춰 필요한 CSS 속성을 부여한 뒤 결과를 확인하시오.
+요구사항
+img tag
+profile-image 클래스를 가진다.
+1px 의 검은색 solid 테두리를 가진다.
+테두리는 둥근 모양을 가진다.
+
+h1 tag
+name-item 클래스를 가진다.
+글씨 크기는 30px 을 가진다.
+margin 은 모든 방향에 대해 0으로 설정한다.
+
+p
+info-item 클래스를 가진다.
+margin은 모든 방향에 대해 4px 만큼 가진다.
+
+실행 결과는 첨부된 result 폴더의 이미지를 참고한다. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Business card
+    </title>
+</head>
+<body>
+
+<div class="card-box">
+    <img class="profile-image" src="profile.png" alt="Logo" width="100" height="100" >
+    <h1 class="name-item">홍길동</h1>
+    <p class="info-item">Front-End Developer, Example</p>
+    <p class="info-item">서울시 강남구 테헤란로 1234</p>
+    <p class="info-item">02-123-4567</p>
+</div>
+
+</body>
+
+<style>
+    .card-box {
+        width: 400px;
+        height: 220px;
+        border: 1px solid black;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgb(243, 243, 243);
+    }
+
+    .profile-image {
+        border: 1px black solid;
+        border-radius: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .name-item{
+        font-size: 30px;
+        margin: 0 0;
+        text-align: center;
+    }
+
+    .info-item{
+        margin: 4px 4px;
+        text-align: center;
+    }
+</style>
+</html>
