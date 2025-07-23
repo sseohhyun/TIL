@@ -1,0 +1,50 @@
+<!-- style tag 를 활용한다.
+가장 큰 div 부터 작은 div 까지 포함 예시 화면처럼 포함 관계를 갖도록 작성한다.
+
+가장 큰 div
+large-box 클래스를 가진다.
+가로, 세로 각각 400px
+2px 의 검정색 solid 테두리를 가진다.
+중간 div
+medium-box 클래스를 가진다.
+가로, 세로 각각 200px
+2px 의 빨간색 dashed 테두리를 가진다.
+작은 div
+small-box 클래스를 가진다.
+가로, 세로 각각 100px.
+2px 의 파란색 dotted 테두리를 가진다. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .large-box{
+      width: 400px;
+      height: 400px;
+      border: 2px solid black;
+    }  
+
+    .medium-box{
+      width: 200px;
+      height: 200px;
+      border: 2px dashed red;
+    }
+
+    .small-box{
+      width: 100px;
+      height: 100px;
+      border: 2px dotted blue;
+    }            
+  </style>
+</head>
+<body>
+  <div class="large-box">
+    <div class="medium-box">
+      <div class="small-box"></div>
+    </div>
+  </div>
+</body>
+</html>

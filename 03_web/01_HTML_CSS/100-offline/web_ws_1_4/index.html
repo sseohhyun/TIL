@@ -1,0 +1,57 @@
+<!-- 문제
+CSS 프로퍼티는 상속이 되는 것과 되지 않는 것이 있다. https://poiemaweb.com/css3-inheritance-cascading를 참고하여 상속되는 프로퍼티는 상속 되지 않게, 상속 되지 않는 프로퍼티는 상속 되도록 하시오.
+요구사항
+오직 style 태그의 내용만 수정한다. 
+inherit, border, text-align, color 를 활용한다. 
+.outer-box 의 width, height 는 자식에게 상속되지 않는다. 
+.inner-box 의 border 는 .outer-box의 속성을 상속받는다. 
+'첫 번째' span 의 색상과 정렬은 .outer-box의 속성을 상속받아 빨간색, 중앙 정렬 되어야 한다. 
+'두 번째' span 은 색상과 정렬 두 속성 모두 .outer-box로부터 상속받지 않는다.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .outer-box {
+      width : 400px ;
+      height: 200px ;
+      border: 2px solid black;
+      color : red;
+      text-align: center;
+    }
+
+		/* 추가 css 코드 작성 1 */
+    span {
+      color: initial;
+      text-align: initial;
+    }
+
+    .outer-box>.inner-box>span{
+      color: inherit;
+      text-align: inherit;    
+    }
+
+    .inner-box {
+      width : 200px;
+      height: 100px;
+			/* 추가 css 코드 작성 2 */
+      border : inherit;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="outer-box">
+    <div>
+      <span>첫 번째</span>
+    </div>
+    <div class="inner-box">
+      <span>두 번째</span>
+    </div>
+  </div>
+</body>
+</html>
