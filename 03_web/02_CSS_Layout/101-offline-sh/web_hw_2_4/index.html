@@ -1,0 +1,31 @@
+<!-- 자손 결합자는 자식의 자식까지도 다 포함합니다. 즉 하위 모든 요소를 포함합니다. 
+그러나 자식 결합자는 직계 자식만을 포함합니다.
+이어서 자손 결합자는 " "(띄어쓰기)로 자식 결합자는 ">" 기호로 표현합니다. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div p {
+      margin-left: 20px;
+      color: blue;
+    }
+    div > p {
+      color: crimson;
+    }
+  </style>
+
+</head>
+<body>
+  <div>
+    <p>자식</p>              <!-- crimson: div의 자식 -->
+    <div>
+      <p>손자</p>            <!-- blue: div의 손자 -->
+    </div>
+    <p>자식</p>              <!-- crimson: div의 자식 -->
+  </div>
+</body>
+</html>

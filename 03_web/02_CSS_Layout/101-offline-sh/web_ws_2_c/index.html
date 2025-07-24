@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Positioning with Scroll Example</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .static-example{
+            position: static;
+            color: white;
+            background-color: rgb(235, 235, 235);
+        }
+        
+        .relative-example{
+            position: relative;
+            color: white;
+            background-color: rgb(153, 194, 221);
+        }
+
+        .absolute-example{
+            position: absolute;
+            color: white;
+            background-color: rgb(172, 247, 172);
+        }
+
+        .sticky-example{
+            position: sticky;
+            color: white;
+            background-color: rgb(221, 153, 153);
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="container">
+    <div class="static-example">Static</div>
+    <div class="relative-example">Relative</div>
+    <div class="absolute-example">Absolute</div>
+    <div class="sticky-example">Sticky</div>
+    <div class="filler-content"></div> <!-- 추가된 스크롤용 콘텐츠 -->
+</div>
+</body>
+</html>

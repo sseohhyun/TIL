@@ -7,12 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    /* 전체선택자 */
+    /* 전체 선택자 */
     * {
       color: red;
     }
 
-    /* 타입 선택자 */
     h2 {
       color: orange;
     }
@@ -21,26 +20,35 @@
       color: blue;
     }
 
-    /* 클래스 선택자 */
     .green {
+      width: 100px;
+      border: 1px solid black;
+      
       color: green;
     }
 
-    /* id 선택자 */
     #purple {
-      color: purple;
+      color: purple
     }
 
-    /* 자손 결합자, 띄어쓰기 */
+    /* 자손 결합자 */
     .green li {
-      color: brown;
+      color: brown
     }
 
-    /* 자식 결합자, > */
+    /* 자식 결합자 */
     .green > li {
       font-size: 30px;
     }
 
+    .green.box {
+      color: red
+    }
+
+    .card {
+      width: 500px;
+      text-align: center;
+    }
   </style>
 </head>
 
@@ -55,12 +63,23 @@
     <li>알고리즘</li>
     <li>웹
       <ol>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>PYTHON</li>
+        <li class="grand-child">HTML</li>
+        <li class="grand-child">CSS</li>
+        <li class="grand-child">PYTHON</li>
       </ol>
     </li>
   </ul>
+  <div class="card">
+    <div class="card-header">
+      <div class="card-title">
+        <h1>TITLE</h1>
+      </div>
+      <div class="card-body">
+        <img src="" alt="">
+        <p>본문</p>
+      </div>
+    </div>
+  </div>
   <p class="green">Lorem, <span>ipsum</span> dolor.</p>
 </body>
 
