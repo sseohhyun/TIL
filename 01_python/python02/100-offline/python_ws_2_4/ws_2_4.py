@@ -31,7 +31,8 @@ class MovieTheater:
             return "좌석 예약이 실패되었습니다."
     
     def current_status(self):
-        return f'영화관의 총 좌석 수 : {self.total_seats}\n예약된 좌석 수 : {self.reserved_seats}'
+        return f"""{self.name} 영화관의 총 좌석 수 : {self.total_seats}
+{self.name} 영화관에 예약된 좌석 수 : {self.reserved_seats}"""
     
     @classmethod
     def add_movie(cls):
@@ -47,12 +48,14 @@ str_movie = '''이 클래스는 영화관의 정보를 관리하고 좌석 예�
 
 
 movie1 = MovieTheater("메가박스",100)
+movie2 = MovieTheater("CGV",150)
 
 print(movie1.reserve_seat())
 print(movie1.reserve_seat())
-print(movie1.reserve_seat())
-print(MovieTheater.classmethod())
-print(MovieTheater.staticmethod())
-
-
+print(movie2.reserve_seat())
+print(movie1.add_movie())
+print(movie2.add_movie())
 print(movie1.current_status())
+print(movie2.current_status())
+print(f'총 영화 수: {MovieTheater.total_movies}')
+print(MovieTheater.description(str_movie))
