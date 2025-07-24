@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <!-- 1. 이미지가 보여야함 -->
+  <!-- 2. 이미지를 클릭하면 ssafy.com 으로 이동하는 링크여야함 -->
+  <!-- 3. 이미지 주소가 잘못되면 `대체 문구` 가 보여야 함 -->
+  <!-- 
+    src 속성에는 경로를 작성해서 적절한 이미지가 보이게 할 수 있다. 
+    여기서 말하는 경로란, 파일 경로 뿐만아니라, 웹 URL도 포함이다.
+    상대경로, 절대경로 모두 가능
+  -->
+  <!-- 
+    대체 문구란 무엇인가? 
+    이미지의 경로를 작성했으나, 모종의 사유로 이미지가 불러와지지 않을 경우
+    이를 대신할 문구를 작성한다.
+    alt 속성의 기본 기조인데요....
+    거기에 더해서 `웹 접근성`에 대한 이야기를 해 봅시다.
+    alt="삼성청년소프트웨어 AI 아카데미의 약어인 SSAFY의 대표 로고가 작성되어 있습니다."
+  -->
+  <!-- 
+    href속성에 경로를 작성한다 
+    링크라고 하더라도 파일경로 사용 가능합니다.
+    -->
+  <a href="https://www.ssafy.com">
+    <img src="ssafy_logo.png" alt="싸피로고">
+  </a>
+  <!-- 
+    웹 접근성을 위해서 우리는 이제부터 문서 구조화를 진행할때 
+    sementic tag를 활용해 달라.
+  -->
+    <!-- 문서 구조의 예시를 위해서는 div 라는 아무 의미도 기능도 없는
+     태그를 주로 사용할 건데용... 여러분들이 실제 문서를 만들떄는 -->
+  <header></header>
+  <nav></nav>
+  <aside></aside>
+  <section></section>
+  <article></article>  
+</body>
+</html>
+

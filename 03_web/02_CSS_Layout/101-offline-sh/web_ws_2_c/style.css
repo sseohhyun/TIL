@@ -1,0 +1,35 @@
+
+.static-example{
+  width: 1000px;
+  height: 100px;
+  position: static;
+  color: white;
+  background-color: rgb(235, 235, 235);
+}
+
+.relative-example{
+  width: 1000px;
+  height: 100px;
+  position: relative;
+  color: white;
+  background-color: rgb(153, 194, 221);
+}
+
+.absolute-example{
+  width: 1000px;
+  height: 1cqmax;
+  top: 100px;
+  left: 100px;
+  position: absolute;
+  color: white;
+  background-color: rgb(172, 247, 172);
+}
+
+.sticky-example{
+  width: 1000px;
+  height: 100px;
+  position: sticky;
+  color: white;
+  background-color: rgb(221, 153, 153);
+}
+
