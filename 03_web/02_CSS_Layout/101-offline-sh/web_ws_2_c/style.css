@@ -1,35 +1,43 @@
-
 .static-example{
-  width: 1000px;
-  height: 100px;
-  position: static;
-  color: white;
-  background-color: rgb(235, 235, 235);
+    position : static;
+    width: 600px;
+    height: 30px;
+    color: white;
+    background-color: rgb(222, 222, 222);
+    text-align: center;
+    padding: 5px;
 }
 
 .relative-example{
-  width: 1000px;
-  height: 100px;
-  position: relative;
-  color: white;
-  background-color: rgb(153, 194, 221);
+    position : relative;
+    width: 600px;
+    height: 30px;
+    color: white;
+    background-color: rgb(131, 195, 227);
+    text-align: center;
+    top: 20px;
+    left: 20px;
+    padding: 5px;
 }
 
 .absolute-example{
-  width: 1000px;
-  height: 1cqmax;
-  top: 100px;
-  left: 100px;
-  position: absolute;
-  color: white;
-  background-color: rgb(172, 247, 172);
+    position : absolute;
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: rgb(142, 255, 199);
+    text-align: center;
+    top: 20px;
+    left: 20px;
+    padding: 5px;
 }
 
 .sticky-example{
-  width: 1000px;
-  height: 100px;
-  position: sticky;
-  color: white;
-  background-color: rgb(221, 153, 153);
+    position : sticky;
+    width: 600px;
+    height: 30px;
+    color: white;
+    background-color: rgb(224, 139, 139);
+    text-align: center;
+    padding: 5px;
 }
-
