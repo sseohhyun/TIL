@@ -1,70 +1,93 @@
-<!-- position과 flex, boxmodel 속성은 반드시 사용하여야 한다.
-그 외 화면 구성은 자유롭게 진행한다.
-
-실행 결과는 첨부된 result 폴더의 이미지를 참고한다. -->
-
-
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>도서 관리 서비스</title>
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
       background-color: #f7f7f7;
-      margin: 0;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
     }
 
+    /* 헤더 */
     h1 {
+      background-color: #333;
+      color: #fff;
       text-align: center;
-      color: #333;
+      padding: 20px 0;
+      margin-bottom: 0;
     }
 
-    .book-container {
-      box-sizing: border-box;
-      background-color: #fff;
-      width: 300px;
-      padding: 20px;
-      margin: 10px;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .book-title {
-      font-size: 18px;
-      font-weight: bold;
-      color: #333;
-      margin-bottom: 10px;
-    }
-
-    .book-author {
-      font-size: 14px;
-      color: #666;
-      margin-bottom: 10px;
-    }
-
-    .book-description {
-      font-size: 14px;
-      color: #888;
-    }
-
-    .section-title {
-      position: sticky;
-      top: 0px;
-      background-color: #fff;
-      padding: 30px;
-      margin-bottom: 10px;
-      font-size: 20px;
-      font-weight: bold;
-      width: 100%;
+    nav {
+      margin-top: 0;
+      background-color: #6e6e6e;
+      padding: 5px 0;
       display: flex;
       justify-content: center;
     }
 
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    /* 메인 영역 */
+    main {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 10px;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    /* 도서 카드 리스트 */
+    .book-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px; /* 요소 사이의 간격 조정 */
+    }
+
+    .book-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      width: 250px;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .book-card img {
+      width: 100%;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    .book-card h3 {
+      font-size: 18px;
+      margin: 10px 0 5px;
+    }
+
+    .book-card p {
+      font-size: 14px;
+      color: #555;
+      margin: 5px 0;
+    }
+
+    /* TOP 버튼 */
     .top-button {
       position: fixed;
       right: 20px;
@@ -72,48 +95,87 @@
       background-color: #333;
       padding: 10px 20px;
       border-radius: 5px;
-      border: none;
     }
 
     .top-button a {
       text-decoration: none;
-      font-size: 16px;
       color: #fff;
-    }
-
-    .book-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      font-size: 14px;
     }
   </style>
 </head>
-<body style="height: 3000px;">
-  <h1>도서 관리 서비스에 오신 것을 환영합니다</h1>
+<body>
 
-  <div class="section-title">베스트 셀러 목록</div>
-  <div class="book-list">
-    <div class="book-container">
-      <h2 class="book-title">도서 제목 1</h2>
-      <p class="book-author">저자 1</p>
-      <p class="book-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at lacus vel neque ullamcorper tempus.</p>
-    </div>
+  <h1>도서 관리 서비스</h1>
+  <nav>
+    <a href="#">홈</a>
+    <a href="#best_list">베스트 셀러</a>
+    <a href="#new_list">신간 도서</a>
+    <a href="#recommend_list">사서 추천</a>
+  </nav>
 
-    <div class="book-container">
-      <h2 class="book-title">도서 제목 2</h2>
-      <p class="book-author">저자 2</p>
-      <p class="book-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-    </div>
-  </div>
 
-  <div class="section-title">신간 도서 목록</div>
-  <div class="book-list">
-    <div class="book-container">
-      <h2 class="book-title">도서 제목 3</h2>
-      <p class="book-author">저자 3</p>
-      <p class="book-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-  </div>
+  <main>
+    <section>
+      <h2 id="best_list">베스트 셀러 목록</h2>
+      <div class="book-list">
+        <div class="book-card">
+          <img src="book.png" alt="도서 이미지">
+          <h3>도서 제목 1</h3>
+          <p>저자 1</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="book-card">
+          <img src="book.png" alt="도서 이미지">
+          <h3>도서 제목 2</h3>
+          <p>저자 2</p>
+          <p>Sed ut perspiciatis unde omnis iste natus error.</p>
+        </div>
+        <div class="book-card">
+          <img src="book.png" alt="도서 이미지">
+          <h3>도서 제목 3</h3>
+          <p>저자 3</p>
+          <p>Excepteur sint occaecat cupidatat non proident.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 id="new_list">신간 도서 목록</h2>
+      <div class="book-list">
+        <div class="book-card">
+          <img src="book.png" alt="도서 이미지">
+          <h3>도서 제목 4</h3>
+          <p>저자 4</p>
+          <p>Duis aute irure dolor in reprehenderit in voluptate.</p>
+        </div>
+        <div class="book-card">
+          <img src="book.png" alt="도서 이미지">
+          <h3>도서 제목 5</h3>
+          <p>저자 5</p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 id="recommend_list">사서 추천 도서 목록</h2>
+      <div class="book-list">
+        <div class="book-card">
+          <img src="book.png" alt="도서 이미지">
+          <h3>도서 제목 6</h3>
+          <p>저자 6</p>
+          <p>Velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+        <div class="book-card">
+          <img src="book.png" alt="도서 이미지">
+          <h3>도서 제목 7</h3>
+          <p>저자 7</p>
+          <p>Excepteur sint occaecat cupidatat non proident.</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <div class="top-button">
     <a href="#">TOP</a>
