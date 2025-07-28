@@ -1,0 +1,80 @@
+<!-- 할 일 목록을 관리 할 수 있는 기능을 구현하고자 한다. 데이터를 저장할 수 있는 DB는 나중에 개발할 예정이다. 
+지금은 JS를 사용하여서 페이지 새로고침 없이, 한 화면에서 목록을 생성, 수정, 삭제 할 수 있는 기능만 만들어 보고자 한다. (실제 data가 변경되는 것이 아닌, DOM만 조작하는 것) 
+요구 사항을 참고하여 적절한 코드를 작성하시오.
+요구사항
+
+필수
+todo 아이템을 추가할 수 있어야 한다.
+아이템 클릭을 통해 아이템에 취소선을 추가하거나 제거할 수 있어야 한다.
+x 버튼을 통해 아이템을 삭제할 수 있어야 한다.
+
+선택
+빈 값의 데이터 입력 방지
+빈 값 입력 시 브라우저 팝업 출력하기
+데이터 작성 후 input value 초기화 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .done {
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body>
+  <form action="/todos/">
+    <input type="text" id="todo-input">
+    <button type="submit">Todo</button>
+  </form>
+  <ul id="todo-list"></ul>
+
+<script>
+  const form = document.querySelector('form')
+
+  const addTodo = function(event) {
+    // 이벤트를 취소한다.
+    event.preventDefault()
+    
+    // 입력 element를 찾고 해당 입력 element의 value 값을 저장한다.
+    const input = document.querySelector('#todo-input')
+    const value = input.value.trim()
+
+    // li element를 생성 후 input element의 value 값을 데이터로 저장한다
+    const li = document.createElement("li")
+    li.textContent = value
+
+    // ul 태그의 자식 태그로 위에서 생성한 li element를 넣는다.
+    const ul = document.querySelector("#todo-list")
+    ul.appendChild(li)
+
+    // 삭제 버튼을 생성 후 li 태그의 자식 태그로 넣는다.
+    const xbtn = document.createElement("button")
+    xbtn.textContent = "X"
+    li.appendChild(xbtn)
+
+    // 삭제 버튼을 클릭하면 해당 li element를 삭제한다
+    const handleDelete = function(event){
+      const liToRemove = event.target.parentElement
+      liToRemove.remove()
+    }
+    xbtn.addEventListener('click',handleDelete)
+
+    // li element를 클릭하면 취소선이 토글된다.
+    const toggleDone = function (event) {
+      event.currentTarget.classList.toggle('done')
+    }
+    li.addEventListener('click',toggleDone)
+
+    // 할 일 추가한 후 입력 필드 비우기
+    input.value = ''
+  }
+  form.addEventListener('submit', addTodo)
+</script>
+</body>
+</html>

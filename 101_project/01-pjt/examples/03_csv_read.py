@@ -13,5 +13,3 @@ with open('users.csv', 'r', encoding='utf-8') as file:
     print(csv_reader.fieldnames)
     for row in csv_reader:
         print(row)
-
-    
