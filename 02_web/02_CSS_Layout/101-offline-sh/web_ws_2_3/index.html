@@ -1,0 +1,109 @@
+<!-- mdn 문서 참고 ) https://developer.mozilla.org/ko/docs/Web/CSS/position
+h1태그 제목 아래 베스트 셀러 목록 섹션을 생성한다.
+2번째 도서 카드 아래 신간 도서 목록 섹션을 생성한다.
+생성된 두 섹션은 일반적인 상황에서는 제 자리를 지키고 있으나, 화면의 상단 끝에 다다르게되면, 다음 섹션을 만나기 전까지 스크롤을 따라 이동하도록 위치를 설정한다.
+섹션의 배경 색, 글씨 크기 등은 자유롭게 구성한다.
+주어진 CSS 속성을 수정하여 화면 좌측 하단에 고정된 버튼이 만들어 지도록 한다.
+버튼은 TOP 글자로 된 a 태그를 자식으로 가지고 있다.
+a 태그의 href 속성은 #으로 작성한다.
+
+실행 결과는 첨부된 result 폴더의 이미지를 참고한다. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 20px;
+      height: 3000px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .sticky{
+      position: sticky;
+      top: 0;
+      background-color: rgb(230, 234, 250);
+      padding: 20px;
+      margin: 10px; 
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .book-container {
+      box-sizing: border-box;
+      display: inline-block;
+      background-color: #fff;
+      width: 300px;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .book-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .book-author {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .book-description {
+      font-size: 14px;
+      color: #888;
+    }
+
+    .top{
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      background-color: #383838;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin: 20px;
+
+    }
+  </style>
+</head>
+<body>
+  <h1>도서 관리 서비스에 오신 것을 환영합니다</h1>
+
+  <div class="sticky">베스트 셀러 목록</div>   
+  <div class="book-container">
+    <h2 class="book-title">도서 제목 1</h2>
+    <p class="book-author">저자 1</p>
+    <p class="book-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at lacus vel neque ullamcorper tempus.</p>
+  </div>
+
+  <div class="book-container">
+    <h2 class="book-title">도서 제목 2</h2>
+    <p class="book-author">저자 2</p>
+    <p class="book-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+  </div>
+  
+
+  <div class="sticky">신간 도서 목록</div>
+  <div class="book-container">
+    <h2 class="book-title">도서 제목 3</h2>
+    <p class="book-author">저자 3</p>
+    <p class="book-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+  <a href="#"><span class="top">TOP</span></a>
+ 
+</body>
+</html>
