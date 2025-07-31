@@ -1,29 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Business card
-    </title>
+  <meta charset="UTF-8">
+  <title>Business card</title>
+  <style>
+    .card-box {
+      width: 400px;
+      height: 220px;
+      border: 1px solid black;
+      margin: 0 auto;
+      /* 테두리랑 적당히 상하좌우 모두 10px만큼 여백 */
+      /* margin, padding 과 같은 요소들은 상하좌우 값들을 제어 할 수 있는데... */
+
+      /* 상 우 하 좌 -> 시계 방향 */
+      /* padding: 40px 30px 20px 10px;  */
+      /* 상 좌우 하 -> 응 모양. */
+      /* padding: 30px 20px 10px;  */
+      /* 상하 좌우 */
+      /* padding: 30px 10px;  */
+
+      padding: 10px; /* 상하좌우 */
+      background-color: rgb(249, 249, 249);
+      /* 
+        content를 가운데 정렬 해야 한다.
+        -> 기계적으로 flex 쓰는 경우 너무 많다.
+        닭 잡는데 소 잡는 칼 쓰지 마쇼.
+
+        content 정렬은 text-align
+        마찬가지로 개발자 도구로 card-box의 자식들을 선택해 보면
+        Inherited from. card-box를 볼 수 있고, 거기에!
+        text-align: center가 상속 되어 있음을 볼 수 있다.
+        여기서 말하는 content는 그냥 일반적인 문자열들.. 혹은 이미지들
+
+        flex는 언제 쓰는거냐?
+        요소 내부의 content 정렬이 아니라!!
+        요소 자체의 정렬.
+      */
+      text-align: center;
+      /* display: flex; */
+    }
+    .name-item {
+      margin: 0;
+    }
+    .info-item {
+      margin: 0;
+    }
+    .profile {
+      border: 1px solid black;
+      /* 
+        기본 모든 요소의 영역은 네모다. 
+        그런데 그 네모의 모양을 바꾸고 싶다면?
+        box-size 에서 중요한 기준은 뭐였냐?
+        1. content
+        2. border -> 내 영역의 마지노선
+        테두리를 깎아버리면?
+          테두리를 기준으로 그 안에 content가 들어감.
+      */
+      /* 
+        얘도 shorthand임 
+        좌상 우상 좌하 우하 에 대한 shorthand임
+        아무것도 안적고 크기 정하면 모든 영역에 대해서 깎아냄
+      */
+      border-radius: 50%;
+    }
+  </style>
 </head>
 <body>
+  <!-- 
+    1. 현재 주어진 상태에서 result와 같게 만들기 위해서는
+    우선, img와 h1 사이의 여백을 없애야 할 것 같다.
+    그 이유를 개발자 도구에서 인스펙터 (ctrl + shift + c)로 선택해 보니
+    h1 태그의 상하에 margin 값이 있다. 왜지? 난 설정 한 적 없는데?
+    개발자 도구로 보니까 `user agent stylesheet` 라는게 h1에 설정 되 있더라.
+      라이브 수업시간에 이야기 했던
+      HTML이 하는 일은 분명 마크업만 하는건데...
+      그걸 우리가 보기 좋게 만들어주는게 브라우저의 역할이고,
+      그래서, 특정한 몇몇 태그들에는 브라우저마다 각가 본인들이 설정한 어느정도의 CSS가 되어있다.
+      이게 `user agent stylesheet`
+    (다른말로 하면, 브라우저마다 저 수치가 다르다는거임! 디자이너 스트레스 받는 요소라는 것.)
+    (그래서 보통.. 작업을 시작하기전에 이 user agent stylesheet에 포함되는 내용을 모두 없애고 시작한다.)
+  -->
+    <!-- 
+      3. 모든 요소의 불필요한 marigin을 없애고 나니
+      요소들이 div랑 너무 딱 달라 붙어 있다. 어느정도 내부 여백을 두고 싶다.
+      div의 테두리 내부의 content들이 여백이 생기고 싶다. -> padding
+    -->
+  <div class="card-box">
+    <img class="profile" src="profile.png" alt="Logo" width="100" height="100">
+    <h1 class="name-item">홍길동</h1>
+    <!-- 2. 아래 3가지 p태그에 모두 같은 스타일을 적용시킬 것이므로 같은 class를 부여. -->
+    <p class="info-item">Front-End Developer, Example</p>
+    <p class="info-item">서울시 강남구 테헤란로 1234</p>
+    <p class="info-item">02-123-4567</p>
+  </div>
 
-<div class="card-box">
-    <img src="profile.png" alt="Logo" width="100" height="100">
-    <h1>홍길동</h1>
-    <p>Front-End Developer, Example</p>
-    <p>서울시 강남구 테헤란로 1234</p>
-    <p>02-123-4567</p>
-</div>
-
+  <!-- html과 css selector를 잘 기억해두면 좋은점. -->
+   <!-- 결합자는 크게 안 다뤘는데.. 기본적인 형제 자매 관계 정도만 기억해도 -->
+    <!-- emmet이 단순히 ! 만 있는게 아니라.. 여러분들이 쓰고 있는 각종 자동완성 -->
+     <!-- 예를들어, di tab 하면 div 태그가 만들어지는것... -->
+      <!-- emmet은 사실 모두 선택자입니다. -->
+  <!-- 만약. 클래스가 box 이고, id가 card인 div를 만든다. -->
+  <!-- div.box#card -> div는 생략가능 -->
+  <!-- .card.red.box.item>ul#list>li.item{$}*5 -->
+  <div class="card red box item">
+    <ul id="list">
+      <li class="item">1</li>
+      <li class="item">2</li>
+      <li class="item">3</li>
+      <li class="item">4</li>
+      <li class="item">5</li>
+    </ul>
+  </div>
 </body>
-
-<style>
-    .card-box {
-        width: 400px;
-        height: 220px;
-        border: 1px solid black;
-        margin: 0 auto;
-    }
-
-</style>
 </html>

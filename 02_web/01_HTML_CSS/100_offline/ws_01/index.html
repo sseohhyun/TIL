@@ -3,7 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- HTML 문서 내에서 CSS 스타일을 정의할 때 사용 -->
+  <style>
+    .large-box {
+      width: 400px;
+      height: 400px;
+      /* border: 요소의 테두리 */
+      /* 두께, 스타일, 색상을 한번에 설정 가능 */
+      border: 2px black solid;
+    }
+
+    .medium-box {
+      width: 200px;
+      height: 200px;
+      border: 2px red dashed;
+    }
+
+    .small-box {
+      width: 100px;
+      height: 100px;
+      border: 2px blue dotted;
+    }
+  </style>
 </head>
 <body>
+  <!-- class: CSS나 JavaScript에서 여러 요소를 한번에 선택하고 스타일링하기 위해 사용하는 그룹 식별자 -->
+  <!-- 같은 class 이름을 여러 요소에 중복 사용 가능 -->
+  <!-- css에서 .클래스명으로 선택해서 스타일 적용 -->
+  <div class="large-box">
+    <div class="medium-box">
+      <div class="small-box"></div>
+    </div>
+  </div>
 </body>
 </html>

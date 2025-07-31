@@ -2,18 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Business card
-    </title>
+    <title>Business card</title>
+    <!-- 인라인 스타일 CSS -->
+    <!-- style 태그는 head 안에 작성 -->
+    <style>
+      /* 그냥 div!!!  요소 선택자 해도 지금 실습에는 문제없다.*/
+      /* class 선택자 . 을 사용해서 card 클래스를 선택한다. */
+      .card {
+        /* 테두리 */
+        /* border는 기본적으로 아래의 3요소가 기본 */
+        /* border-color: black;
+        border-width: 1px;
+        border-style: solid; */
+        /* 가장 기본적인 3요소는 한 줄로 작성 */
+        /* 순서는 상관 없다. */
+        /* border: solid black 1px; */
+        border: 1px solid black;
+        /* display: block인 요소는 기본적으로 width가 자신이 차지할 수 있는 모든 공간 */
+        /* width를 직접 px로 고정하게 되면 고정된 그 크기를 항상 유지한다. */
+        /* 예를들어, naver main창 -> www.naver.com 으로 접속하면 전체 container 크기 고정임 */
+        /* 
+          디바이스별로 다른 화면이 보이게 하는건 -> m.naver.com 으로 아예 따로 구분함 
+          모바일용 naver 페이지는 반응형 (디바이스 크기에 따라 width가 변하도록 만들어짐.)
+        */
+        width: 400px;
+        /* height는? 기본적으로 내가 가진 모든 컨텐츠를 다 보여줄 수 있도록 늘어난다. */
+        /* 
+          그러나 높이도 똑같이 내가 px로 고정해버리면? 
+          내가 가진 요소의 길이가 얼마가 됐든 모르겠고, 그 높이로 고정됨
+          그러면 요소가 내 영역을 튀어 나가 버림
+          -> 뉴비들 제일 스트레스 받는 구간..
+
+          근데 우리 조금만 생각해보면 당연한 일일 것 같다.
+          왜냐. 내 크기는 400px * 200px 로 하겠다고 내가 적어놓고
+          왜 요소가 튀어나가냐고 뭐라고 하면 곤란하다..
+
+          안 튀어 나가게 만드는 게 내 역할이다.
+        */
+        height: 200px;
+      }
+    </style>
 </head>
 <body>
-
-<div>
+  <!-- 어떤 역할을 수행하는 영역 -->
+  <div class="card">
     <img src="profile.png" alt="Logo" width="100" height="100">
     <h1>홍길동</h1>
     <p>Front-End Developer, Example</p>
     <p>서울시 강남구 테헤란로 1234</p>
     <p>02-123-4567</p>
-</div>
-
+  </div>
 </body>
 </html>

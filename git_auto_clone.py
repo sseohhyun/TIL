@@ -18,10 +18,10 @@ seperators = ['hw', 'ws']  # -> 반복문 사용해서 만들어 지도록 하�
 set_number = input('세트 번호를 입력해 주세요 : ')
 for sep in seperators:
     if sep == 'hw':
-        BASE_URL = f'https://lab.ssafy.com/katie1426/'
+        BASE_URL = f'https://lab.ssafy.com/data_track/{subject}_daily_homework/'
         stages = [2, 4]
     else: 
-        BASE_URL = f'https://lab.ssafy.com/katie1426/'
+        BASE_URL = f'https://lab.ssafy.com/data_track/{subject}_daily_practice/'
         # 보충 수업에서 쓰는 문제는 a, b, c로 되어 있다.
         stages = [1, 2, 3, 4, 5, 'a', 'b', 'c']
     for stage in stages:   

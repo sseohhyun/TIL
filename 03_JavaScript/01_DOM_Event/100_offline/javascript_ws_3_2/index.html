@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .warning-message {
+        color: red;
+      }
+    </style>
+</head>
+<body>
+  <h1>Sign up</h1>
+  <form>
+    <div>
+      <label for="username">username: </label>
+      <input type="text" id="username">
+    </div>
+
+    <div>
+      <label for="password1">password: </label>
+      <input type="password" id="password1">
+      <span id="warning1" class="warning-message"></span>
+    </div>
+
+    <div>
+      <label for="password2">password confirmation: </label>
+      <input type="password" id="password2">
+      <span id="warning2" class="warning-message"></span>
+    </div>
+    
+    <button>Signup</button>
+  </form>
+
+  <script>
+    // 요소 선택
+    const signupForm = document.querySelector('#signupForm')
+    const password1 = document.querySelector('#password1')
+    const password2 = document.querySelector('#password2')
+    const warning1 = document.querySelector('#warning1')
+    const warning2 = document.querySelector('#warning2')
+    
+    // change 이벤트(input 포커스 아웃)에 비밀번호 검증 로직 추가
+    password1.addEventListener('change', function (event) {
+      const p1 = event.target.value
+      if (p1.length < 8) {
+        warning1.innerText = '비밀번호는 8자 이상이어야 합니다.'
+      } else {
+        warning1.innerText = ''
+      }
+    })
+    
+    // 비밀번호 확인시 2개의 비밀번호가 같은지 확인
+    password2.addEventListener('change', function (event) {
+      const p1 = password1.value
+      const p2 = event.target.value
+
+      if (p1 !== p2) {
+        warning2.innerText = '비밀번호가 일치하지 않습니다.'
+      } else {
+        warning2.innerText = ''
+      }
+    })
+
+  </script>
+</body>
+</html>
