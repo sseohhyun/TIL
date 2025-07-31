@@ -5,13 +5,13 @@ def perm_no_slice(arr, start_idx):
         start_idx: 현재 순열을 만들고 있는 시작 인덱스
     '''
     # nPr 이 하고 싶다. 즉, 앞에 r개 까지만 보고싶다.
-    if start_idx == 2:
-        print(arr[:2])
+    # if start_idx == 2:
+    #     print(arr[:2])
 
     # 시작해야 하는 인덱스가 내가 선택해야하는 요소 개수만큼이 되었다.
     # 즉, 시작해야 하는 인덱스가 마지막 번호가 되었다.
     if start_idx == len(arr):
-        # print(arr)
+        print(arr)
         return
     # 재귀 호출
     for idx in range(start_idx, len(arr)):
