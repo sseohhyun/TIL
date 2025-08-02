@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 일반적으로 우리가 겪게 되는 상황!
+    // 어떠한 최종 목적 혹은 목표를 명세로 받지는 않을 것이다.
+      // 기능 개발적 관점에서...
+    // DB 정보를 넘겨받음 -> password는 최소 8자여야 한다.
+      // 아, 비밀번호 유효성 검사 기능 만들어야겠다.  
+      // 신입이? 어떻게? 보통 생각 못함.
+      // 디버깅
+    // 편법으로 편하게 갈 생각 말고, 모든 상황에 대해서 고려
+    // 효율? 나중에 생각. 느린 것? 나중에 생각.
+    function isValid (word) {
+      // 우리가 가장 먼저 시도해 봄 직 한 것들?
+      // 배운거 다 써보기
+      // let count = 0
+      // for (const char of word) {
+      //   count += 1
+      //   // 최종 산출물 상 필요가 없어진 코드는 (확인용 출력 코드 등) 주석처리
+      //   // 지우지 마시고... (왜? 나중에 완벽한 줄 알았지만, 아닌 경우... 디버깅 다시해야함)
+      //   // console.log(`요소: ${char}`)
+      //   // console.log(`누적 수: ${count}`)
+      // }
+
+      // 위에서 for ... of 순회해서 조건의 근거가 될 count를 얻음
+      // 아래 둘 중 어떤 방식으로 if문을 적는게 옳은가?
+        // 8글자 이상인 경우에 true를 반환하자.
+        // 8글자 미만인 경우에 false를 반환하자.
+      // 내가 생각하기 편한 방향으로 하십쇼.
+      // if (count >= 8) {
+      //   return true
+      // } else {
+      //   return false
+      // }
+
+      // for ... in 은 객체 순회할때 쓰는것... 요소가 아니라
+      // 인덱스가 출력되고 있음
+      // for (const char in word) {
+      //   count += 1
+      //   console.log(char)
+      //   console.log(count)
+      // }
+
+      // JS에서는 index가 범위를 벗어나도 에러가 안나네? 다른 방법
+      // for (let i = 0; i <= 9; i++) {
+      //   console.log(word[i])
+      // }
+      // if (word.length >= 8) {
+      //   return true
+      // } else {
+      //   return false
+      // }
+
+      // 삼항 연산자를 활용
+      return word.length >= 8 ? true : false
+    }
+    console.log(isValid('password'))
+    // 값을 삽입 하는 과정에서 아래에 문제가 있다는 사실을 알게 될 것.
+      // 어떠한 제약 조건이 주어졌을 때, 우리는 그 제약 조건에만 
+      // 관심을 줘서는 안된다.
+		console.log(isValid('pwd')) 
+
+    const myJoin = function (array, separator) {
+      // 최종 결과물: 함수의 반환 값
+      let result = ''
+
+      // 나는 for문 보다 for ... of 문이 더 편해... -> 시도해보기
+      // for (const char of array) {
+            // 음... 언제까지 seprator를 더해도 되는지 기준을 뭘로 잡음?
+            // 억지부려보기
+            // if (char === array[array.length - 1]) {
+            //   break
+            // }
+      // }
+
+      // 어라라.. for ... in 은 index가 나오던데... 그걸 쓰면...?
+        // 객체 순회라서 순서 보장 못함. (사실 순서대로 나오긴 함;;)
+        // 같이 개발하는 사람 입장에선... for ... in 'object' <- 이게 당연히 객체일거라 예상함.
+
+      for (let idx = 0; idx < array.length; idx++) {
+        // 왜 let이 아닌 const를 썼을까? -> 그냥 기본 값이 const라고 생각하자.
+        // 우리는 이 word 라는 변수에 할당된 값이, 결코 이 블럭 내에서는 재할당 될리가 없어야한다.
+          // 실수로라도.
+        // let word = array[idx]
+
+        // 원본 문자열에서 얻어낸 값을 임시 변수에 할당하고
+        const word = array[idx]
+        // 그 값을 최종 결괏값에 순서대로 더해 나갈건데,
+        result += word
+        // 구분자에 해당하는 값도 함께 더해준다.
+        // result += separator
+        // 아, 구분자는 무조건 더하는게 아니다. 마지막엔 안 더해야한다.
+        // 마지막이란?
+          // idx의 값이 배열의 마지막 인덱스 번호와 같아지면 안 더해야한다.
+          // 동등 연산자 '==' 를 쓰면 예기치 못한 조건 처리가 될 수 잇다.
+          // 일치 연산자 '==='를 권장한다.
+        // 아래처럼 작성하고 나니, 뭔가 로직이 마음에 안든다면, 그때가서 바꾸자
+        // if (idx < array.length - 1 ) {
+        //   result += separator
+        // }
+        if (idx === array.length - 1) {
+          continue
+        } else {  // 그 외의 상황에는
+          result += separator
+        }
+        // 코드 실행 결과 "010-1234-5678-" 이 되어 버렸음.
+          // 왜 그렇게 됐는지 이유 적고, 생각하기.
+      }
+
+      // 함수의 return 값을 미리 적어두는 건
+      // 이 함수의 개발 과정에서, 최종 목적 및 목표를 명시해두는 것
+      // array의 값들을 separator 기준으로 하나의 문자열로 만들어서 반환
+      return result
+    }
+    console.log(myJoin(['010', '1234', '5678'], '-'))
+
+    // 요구사항: 객체 반환하기
+    const makeOrder = function (menu, size = 'regular') {
+      // const obj = {
+      //   menu: menu,
+      //   size: size
+      // }
+      // return obj
+
+      // 함수의 최종 목적이 객체를 반환 하는 것인데. 변수에 왜 다음?
+      // 변수에 무조건 담아야 할 이유가 있음?
+      // 변수에 할당을 하는 이유가 뭔데? -> 그 객체를 나중에 또 쓸일 있을때 이름으로 부를려고
+
+      // return {
+      //   menu: menu,
+      //   size: size
+      // }
+
+      // 반환 하려는 값이 객체다 -> 객체의 특징 (구조 분해 할당 가능함)
+      return { menu, size }
+    }
+    console.log(makeOrder('mocha'))
+
+    // 아래 함수를 Arrow Funcion으로 바꾸기
+    // JS에서 함수 정의할 일 생기면 -> 바로 Arrow Function으로 바꿔보기
+    function celsiusToFahrenheit (celsius) {
+      return celsius * 9 / 5 + 32
+    }
+    
+    // 화살표 함수로 바꾸는 1단계 (function) 키워드를 (=>)로 바꾸기
+    const celsiusToFahrenheit1 = (celsius) => {
+      return celsius * 9 / 5 + 32
+    }
+
+    // 화살표 함수로 바꾸는 2단계 
+    // 매개변수가 한 개면, 소괄호 생략 하기
+    const celsiusToFahrenheit2 = celsius => {
+      return celsius * 9 / 5 + 32
+    }
+
+    // 화살표 함수로 바꾸는 3단계 
+    // 블럭 내에 작성할 코드가 return 한 줄이라면, 
+    // 블럭 영역과 return 생략하기
+    const celsiusToFahrenheit3 = celsius => celsius * 9 / 5 + 32
+
+    // const celsiusToFahrenheit3 = celsius => celsius * 9 / 5 + 32
+
+    /*
+      화살표 함수를 만들어서 쓰는 이유는...
+      function 키워드가 쓰기 귀찮아서 적게 타이핑 할려고가 아니다!!!
+      JS에서 함수, 메서드 내부에서 사용될 this가 동작하는 방식에 의해 
+      벌어질 수 있는 실수를 최소화 하기 위해서 이다.
+    */
+
+    const obj = {
+      name: 'Bob',
+      greeting() {
+        console.log(this)
+      }    
+    }
+    // 문제 1번
+    console.log(obj.greeting()) // this는 무엇을 가리키는가? -> obj
+
+    // 문제 2번
+    const other = obj.greeting
+    console.log(other())  // this는 무엇을 가리키는가? -> window
+
+    // 왜? 호출한 방식에 따라서 this에 매핑되는 값이 다르기 때문이다.
+
+    const obj2 = {
+      numbers: [1, 2, 3, 4],
+      greeting() {
+        this.numbers.forEach(ele => {  // 화살표 함수로 만들게 되면
+          // this는 본인(함수)가 속한 그 직속의 this를 따라감
+          console.log(this) 
+        })
+      }
+    }
+    // 문제 3
+    console.log(obj2.greeting())  // this는 누구인가? window다. 왜?
+
+    const some = function () {
+      console.log(this)
+    }
+
+    const obj4 = {
+      delta() {
+        console.log(this)
+      }
+    }
+
+    const obj3 = {
+      greeting() {
+        // obj4.delta()  // obj4
+        // some()  // window
+      }
+    }
+    obj3.greeting()
+
+  </script>
+</body>
+</html>
