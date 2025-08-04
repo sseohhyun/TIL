@@ -1,7 +1,7 @@
 import itertools
 arr = [1, 2, 3]
 
-print(tuple(itertools.permutations(arr, 2)))  # 순열
+print(tuple(itertools.permutations(arr, 3)))  # 순열
 # ((1, 2, 3), (1, 3, 2), (2, 1, 3), (2, 3, 1), (3, 1, 2), (3, 2, 1))
 
 print(tuple(itertools.combinations(arr, 2)))  # 조합

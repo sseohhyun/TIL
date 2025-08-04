@@ -8,21 +8,25 @@ def hanoi(n, source, auxiliary, target):
         auxiliary (str): 보조 기둥 (예: 'B')
         target (str): 목표 기둥 (예: 'C')
     """
+    if n == 0:
+        return 0  # 옮길 게 없으면 횟수도 없음
+
     # 일단, 옮겨야 할 원판의 수가 1개보단 많아야 일을 한다.
-    if n > 0:
+    elif n > 0:
         # 1단계: 가장 큰 원반을 옮기기 위한 준비
         # n-1 개의 원반들을 모두 옮겨야 한다. -> 보조 기둥으로
-        hanoi(n-1, source, target, auxiliary)
+        count = hanoi(n-1, source, target, auxiliary)
         # 2단계: 목표였던 가장 큰 원반을 옮긴다.
         print(f'원반 {n}을 {source}에서 {target}으로 이동하였음.')
+        count += 1
         # 3단계: 마무리 작업
         # 가장 큰 원반을 옮기는데 성공했으니
         # 우리는 이제 보조 기둥(각각의 원반 기준으로 보조기둥) 에서
         # 다시 target 기둥으로 옮겨야한다.
-        hanoi(n-1, auxiliary, source, target)
-
+        count += hanoi(n-1, auxiliary, source, target)
+    return count
     
 # --- 실행 예시 ---
 # 3개의 원반을 'A' 기둥에서 'C' 기둥으로 옮기기 ('B' 기둥을 보조로 사용)
 number_of_disks = 3
-hanoi(number_of_disks, 'A', 'B', 'C')
+print(hanoi(number_of_disks, 'A', 'B', 'C'))
