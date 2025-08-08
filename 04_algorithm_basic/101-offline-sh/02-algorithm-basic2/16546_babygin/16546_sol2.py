@@ -35,15 +35,13 @@ for tc in range(1, T+1):
 
     # 3. run 확인
     ## num_list가 3, 6인 경우에 따라 다르게 확인
-    if len(num_list) == 3:
-        if num_list[1] - num_list[0] == 1 and num_list[2] - num_list[1] == 1:
+    minus = [0] * len(num_list)
+    for i in range(1, len(num_list)):
+        minus[i] = num_list[i] - num_list[i-1]
+
+    for idx in range(len(minus)):
+        if minus[idx] < 2:
             num_list = []
-    '''
-    else:
-        for i in range(len(num_list)-2):
-            if num_list[i+1] - num_list[i] > 1 or num_list[i+2] - num_list[i+1] > 1:
-                num_list = []
-            ### 123456, 112233 이 문제임...ㅠㅜㅠㅜㅠ'''
 
     # 4. result 출력
     if len(num_list) == 0:
