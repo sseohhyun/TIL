@@ -15,3 +15,13 @@ memo = [0] * (n + 1)    # 0부터 10까지니까 총 11개
 memo[0], memo[1] = 0, 1 # 기본 룰 초기화
 
 print(fibonacci_memoization(n))
+
+'''
+def fibo_list(n):
+    result = [0, 1]
+    for i in range(2, n+1):
+        result.append(result[-1] + result[-2])
+    return result
+
+print(fibo_list)
+'''
