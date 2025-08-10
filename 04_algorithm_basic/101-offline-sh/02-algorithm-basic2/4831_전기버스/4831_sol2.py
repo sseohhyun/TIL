@@ -1,8 +1,9 @@
 T = int(input())
+
 for t_c in range(1, T+1):
     k, n, m = map(int, input().split())
     charge = list(map(int, input().split()))
-    
+
     cnt = -1
     start_ind = 0
     

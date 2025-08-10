@@ -38,19 +38,18 @@ for tc in range(1, T+1):
     minus = [0] * len(num_list)
     for i in range(1, len(num_list)):
         minus[i] = num_list[i] - num_list[i-1]
+    # print(minus)
 
-    for idx in range(len(minus)):
-        if minus[idx] < 2:
-            num_list = []
+    if max(minus, default=0) <= 1:
+        num_list = []
 
     # 4. result 출력
     if len(num_list) == 0:
-        result = True
+        result = "true"
     else:
-        result = False
+        result = "false"
 
     print(f'#{tc} {result}')
-
 
 
 
