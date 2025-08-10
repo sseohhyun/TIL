@@ -1,5 +1,5 @@
-# import sys
-# sys.stdin = open("input_9489.txt", "r")
+import sys
+sys.stdin = open("input_9489.txt", "r")
 
 # 탐색 함수
 def dfs(r, c, arr, N, M):
@@ -19,7 +19,8 @@ T = int(input())
 for tc in range(1, T+1):
     N, M = map(int, input().split())
     arr = [list(map(int, input().split())) for _ in range(N)]
-    
+    result = []
+
     for i in range(N):
         for j in range(M):
             if arr[i][j] == 1:  # 유적 발견
