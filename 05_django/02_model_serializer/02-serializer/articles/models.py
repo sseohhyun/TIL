@@ -1,13 +1,12 @@
 from django.db import models
 
 # Create your models here.
-class Articel(models.Modes):
+class Article(models.Model):
     title = models.CharField(max_length=10)
     content = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
-    updated_ac = models.DateTimeField(auto_now=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        # print 했을 때 사람이 보기 좋게 꾸밀 때 사용함
+        # PRINT 했을때 사람이 보기 좋게 꾸밀때 쓴다.
         return self.title
-    

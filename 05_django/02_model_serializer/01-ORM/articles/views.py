@@ -39,7 +39,7 @@ def article_create(request):
 def article_list(request):
     articles = Article.objects.all()  # 저장된 모든 article 데이터를 가져옴
     # title이 'article_02'인 데이터만 가져옴 존재하지 않으면 빈 리스트 반환
-    # articles = Article.objects.filter(title='title1') # "제목이 title1인 얘만 필터해서 반환해줘"
+    articles = Article.objects.filter(title='title1')
     
     # QeurySet 객체를 순회하며 각각의 데이터를 딕셔너리로 변환
     if articles:  # articles가 존재하면
@@ -68,4 +68,4 @@ def article_update(request, pk):
 def article_delete(request, pk):
     article = Article.objects.get(pk=pk)  # 삭제할 article 데이터를 가져옴
     article.delete() # 데이터 삭제
-    return JsonResponse({"message": '삭제 완료'})   # 삭제 성공 메시지를
+    return JsonResponse({'message': '삭제 완료~'})

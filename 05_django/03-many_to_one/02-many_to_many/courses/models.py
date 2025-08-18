@@ -6,9 +6,13 @@ from teachers.models import Teacher
 class Course(models.Model):
     name = models.CharField(max_length=100)
     main_teacher = models.ForeignKey(Teacher, on_delete=models.CASCADE)
-    #assistant_teachers = models.ManyToManyField(Teacher)
+    # assistant_teachers = models.ManyToManyField(Teacher)
     assistant_teachers = models.ManyToManyField(Teacher, related_name="assistant_courses")
     # assistant_teachers = models.ManyToManyField(Teacher, related_name="assistant_courses", through='CourseInfo')
+    # assistant_teachers = models.ManyToManyField(Teacher, 
+    #                                             related_name="assistant_courses", 
+    #                                             symmetrical=False
+    #                                             )
 
 
 # 참조 : Through 참고 

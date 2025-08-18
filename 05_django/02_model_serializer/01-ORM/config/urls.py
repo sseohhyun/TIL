@@ -20,5 +20,5 @@ from django.urls import path, include
 urlpatterns = [
     path("admin/", admin.site.urls),
     # 요청이 articles/로 시작하면 뒤로 이어지는 URL path는 articles/urls.py에서 처리하도록 설정
-    # path("articles/", include("articles.urls")),   
+    path("articles/", include("articles.urls")),   
 ]
