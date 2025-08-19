@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9def70f6-361f-49ab-b64c-8927c00df2e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../05-dfs/1226_미로1/1226_sol.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1949_sol.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../1952_수영장/1952_sol.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../05-dfs/1486_장훈이/1486_sol.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../05-dfs/1486_장훈이/1486_sol.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07-heap_backtracking/2105_디저트카페/2105_sol2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../07-heap_backtracking/2105_디저트카페/2105_sol2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07-heap_backtracking/2817_부분수열합/2817_sol.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../07-heap_backtracking/2817_부분수열합/2817_sol.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2115_벌꿀채취/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2115_벌꿀채취/.idea/2115_벌꿀채취.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2115_벌꿀채취/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2115_벌꿀채취/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2115_벌꿀채취/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2115_벌꿀채취/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2115_벌꿀채취/2115_sol.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2115_벌꿀채취/sample_input_2115.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../05_django/02_model_serializer/02-serializer/articles/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../05_django/02_model_serializer/02-serializer/articles/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../05_django/02_model_serializer/02-serializer/articles/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../05_django/02_model_serializer/02-serializer/articles/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1949_sol2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
