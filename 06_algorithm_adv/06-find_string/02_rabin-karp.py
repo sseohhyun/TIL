@@ -42,17 +42,21 @@ def rabin_karp_rolling_hash(text, pattern):
         # 다음 윈도우로 이동 (마지막 윈도우가 아닌 경우에만)
         if i < n - m:
             # 이전 윈도우의 첫 문자 제거
+            # 분배 법칙((A + B) % N = ((A % N) + (B % N)) % N)이 적용 되므로 다음과 같이 뺌
             window_hash = window_hash - (ord(text[i]) * highest_power) % prime
             # 윈도우를 한 칸 이동 (base를 곱함)
             # 전체적으로 base를 곱해준 효과
+            # (6 * 256^3 + 8 * 256^2 + 4 * 256^1 + 3 * 256^0) % 101 이런식으로 계산되는거니까 base를 한번 더 곱해줌
             window_hash = (window_hash * base) % prime
             # 새 윈도우의 마지막 문자 추가
             # 현재 i 위치에서 패턴 m만큼 더해주면, 검사하려는 부분 문자열의 마지막 문자를 추가하게 됨
+            # 위에서 나눠주니까 어차피 유지가 돼서 실제적으로는 window_hash + ord(text[i + m]) % prime와 같음
+            # 왜 이렇게 해주냐? -> 값이 커지는 걸 중간에 방지해주기 위해서임!
             window_hash = (window_hash + ord(text[i + m])) % prime
 
 # 테스트
-text = "ABABDABACDABABCABAB"
-pattern = "ABABCABAB"
+text = "6843212431"
+pattern = "4321"
 print(f"텍스트: {text}")
 print(f"패턴: {pattern}")
 rabin_karp_rolling_hash(text, pattern)
