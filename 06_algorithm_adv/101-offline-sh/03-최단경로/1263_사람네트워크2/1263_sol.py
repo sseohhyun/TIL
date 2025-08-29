@@ -10,14 +10,13 @@ def floyd_warshall(graph):
     for k_node in range(N):
         for start in range(N):
             for end in range(N):
-                Dik = graph[start][k_node]
-                Dkj = graph[k_node][end]
-                Dij = graph[start][end]
+                dij = graph[start][end]
+                dik = graph[start][k_node]
+                dkj = graph[k_node][end]
 
-                if Dik + Dkj < Dij:
-                    graph[start][end] = Dik + Dkj
+                if dik + dkj < dij:
+                    graph[start][end] = dik + dkj
     return graph
-
 
 T = int(input())
 for tc in range(1, T+1):
@@ -29,13 +28,10 @@ for tc in range(1, T+1):
 
     for i in range(N):
         for j in range(N):
-            if i == j: continue
-            elif adj_matrix[i][j] == 0:
+            if i != j and adj_matrix[i][j] == 0:
                 adj_matrix[i][j] = INF
 
     result = floyd_warshall(adj_matrix)
-
-    for m in adj_matrix:
-        ans = min(INF, sum(m))
+    ans = min(map(sum, result))
 
     print(f'#{tc} {ans}')

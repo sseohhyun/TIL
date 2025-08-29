@@ -1,38 +1,43 @@
 import sys
 sys.stdin = open("sample_input_5251.txt")
 
-import heapq
+import heapq, math
+INF = math.inf
 
-
-def dijkstra(graph, start):
-    distance = {v: float('inf') for v in graph}
+def bellman_ford(graph, start):
+    distance = {v: INF for v in graph}
     distance[start] = 0
 
-    heap = []
-    heapq.heappush(heap, [0, start]) # [weight, start]
-    visited = set()
+    for _ in range(N-1):
+        updated = False
+        for u in graph:
+            for v, weight in graph[u]:
+                if distance[u] != INF and distance[u] + weight < distance[v]:
+                    distance[v] = distance[u] + weight
+                    updated = True
+        if updated == False:
+            break
 
-    while heap:
-        dist, current = heapq.heappop(heap)
-        # 방문한적이 있거나, 기존 거리보다 갱신된 거리가 더 크면 넘어가라~~
-        if current in visited or distance[current] < dist: continue
-        visited.add(current)
-        for next, weight in graph[current]:
-            next_distance = dist + weight
-            if next_distance < distance[next]:
-                distance[next] = next_distance
-                heapq.heappush(heap, [next_distance, next])
-    return distance
+    for u in graph:
+        for v, weight in graph[u]:
+            if distance[u] != INF and distance[u] + weight < distance[v]:
+                print("음수사이클")
+                return False
+
+    return distance[N]
 
 T = int(input())
 for tc in range(1, T+1):
-    V, E = map(int, input().split())
-    arr = [list(map(int, input().split())) for _ in range(E)]
+    N, E = map(int, input().split())
+    adj_list = {v: [] for v in range(N+1)}
 
-    graph = {i: [] for i in range(V+1)}
-    for s, e, w in arr:
-        graph[s].append((e, w))
+    # 인접 리스트로 만들기
+    for _ in range(E):
+        s, e, w = map(int, input().split())
+        adj_list[s].append((e,w))
 
-    print(graph)
-    result = dijkstra(graph, 0)
-    print(f'#{tc} {result[V]}')
+    result = bellman_ford(adj_list, 0)
+    print(f'#{tc} {result}')
+
+
+
