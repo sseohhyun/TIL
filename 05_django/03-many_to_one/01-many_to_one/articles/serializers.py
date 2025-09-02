@@ -25,7 +25,9 @@ class ArticleSerializer(serializers.ModelSerializer):
     def get_num_of_comments(self, obj):
         # 여기서 obj는 Serializer가 처리하는 Article 인스턴스
         # view에서 annotate 한 필드를 그대로 사용 가능
-        return obj.num_of_comments
+        # return obj.num_of_comments
+        return obj.comment_set.count()
+        
 
     class Meta:
         model = Article

@@ -10,7 +10,7 @@ def prim(vertices, edges):
     # print(adj_list[start_vertex])
     # 가중치, 시작정점, 종료정점
     min_heapq = [(w, start_vertex, e) for e, w in adj_list[start_vertex]]
-    print(min_heapq)
+    # print(min_heapq)
     heapq.heapify(min_heapq)
     # print(min_heapq)
     visited.add(start_vertex)
