@@ -1,0 +1,9 @@
+USE sns_db;
+
+ALTER TABLE users 
+ADD COLUMN profile_picture VARCHAR(255),
+MODIFY COLUMN email VARCHAR(320);
+
+ALTER TABLE posts
+ADD COLUMN title VARCHAR(255),
+MODIFY COLUMN content LONGTEXT;
