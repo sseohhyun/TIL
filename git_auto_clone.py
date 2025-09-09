@@ -8,7 +8,7 @@ import os
 import subprocess
 
 # 클론 받을 디렉토리 지정
-clone_dir = r'C:\Users\LG\Desktop\실습\django_day3'
+clone_dir = r'C:\Users\SSAFY\Desktop\TIL\08_db\101-offline-sh\day2'
 
 # 디렉토리가 없으면 생성
 os.makedirs(clone_dir, exist_ok=True)
