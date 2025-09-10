@@ -2,5 +2,14 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/08_db/101-offline-sh/day3/db_hw_3_4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/08_db/101-offline-sh/day3/db_ws_3_1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/08_db/101-offline-sh/day3/db_ws_3_2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/08_db/101-offline-sh/day3/db_ws_3_3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/08_db/101-offline-sh/day3/db_ws_3_4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/08_db/101-offline-sh/day3/db_ws_3_5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/08_db/101-offline-sh/day3/db_ws_3_a" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/08_db/101-offline-sh/day3/db_ws_3_b" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/08_db/101-offline-sh/day3/db_ws_3_c" vcs="Git" />
   </component>
 </project>
