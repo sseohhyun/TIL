@@ -8,7 +8,7 @@ import os
 import subprocess
 
 # 클론 받을 디렉토리 지정
-clone_dir = r'C:\Users\SSAFY\Desktop\TIL\ds_lectures\101_offline_sh\day1'
+clone_dir = r'C:\Users\SSAFY\Desktop\TIL\lectures\08_db\101-offline-sh\day3'
 
 # 디렉토리가 없으면 생성
 os.makedirs(clone_dir, exist_ok=True)
@@ -18,12 +18,13 @@ seperators = ['hw', 'ws']
 set_number = input('세트 번호를 입력해 주세요 : ')
 for sep in seperators:
     if sep == 'hw':
+        pass
         BASE_URL = f'https://lab.ssafy.com/katie1426/'
         stages = [2, 4]
     else: 
         BASE_URL = f'https://lab.ssafy.com/katie1426/'
-        # stages = [1, 2, 3, 4, 5, 'a', 'b', 'c']
-        stages = [1, 2, 3, 4, 5]
+        stages = [1, 2, 3, 4, 5, 'a', 'b', 'c']
+        # stages = [1, 2, 3, 4, 5]
     for stage in stages:   
         URL = f'{BASE_URL}{subject}_{sep}_{set_number}_{stage}'
         subprocess.run(['git', 'clone', URL], cwd=clone_dir)
