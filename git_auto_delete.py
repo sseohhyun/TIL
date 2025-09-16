@@ -4,24 +4,29 @@
     # 단, 최상위 폴더 (코드가 실행된 위치의 .git은 제외하고)
 # os 파이썬 표준 라이브러리 -> 운영 체제와 상호 작용 가능
 import os
-import subprocess
+import shutil
 
 # 현재 폴더 경로를 변수에 저장
 current_folder = os.getcwd()
+
 # 현재 폴더 및 모든 하위 폴더를 반복
 for foldername, subfolders, filenames in os.walk(current_folder):
+    # .git 폴더가 현재 폴더의 하위 폴더 목록에 있으면
     if '.git' in subfolders:
-        # root 디렉토리는 제외
+        # 최상위 폴더는 제외
         if foldername == current_folder:
-            continue    # 반복문의 continue -> 아래코드 실행하지말고 다음 순회
-        # 그 외 모든 경우에 대해서
-        # .git 폴더를 삭제 하도록 할 것이다.
-        # 삭제하려는 .git 폴더의 위치를 변수에 저장
+            continue
+
+        # 삭제할 .git 폴더의 전체 경로를 변수에 저장
         git_folder_path = os.path.join(foldername, '.git')
-        # 경로 : '' + '' X
-        # 경로 : 'folder' + '.git' -> folder/.git 
-        # os.rmdir(git_folder_path)
-        # break
-        # rm -rf 폴더 경로
-        subprocess.run(['rm', '-rf', git_folder_path])
-        print(f'{git_folder_path} 폴더가 삭제되었습니다.')
+
+        try:
+            # shutil.rmtree를 사용하여 운영 체제에 관계없이 폴더 삭제
+            shutil.rmtree(git_folder_path)
+            print(f'{git_folder_path} 폴더가 삭제되었습니다.')
+        except OSError as e:
+            print(f"오류: {e.strerror}. 폴더를 삭제할 수 없습니다: {git_folder_path}")
+
+        # .git 폴더를 삭제했으므로, os.walk가 해당 하위 디렉토리를 탐색하지 않도록
+        # subfolders 리스트에서 .git을 제거합니다.
+        subfolders.remove('.git')
