@@ -1,0 +1,1001 @@
+Date,Station,DayOfWeek,Passengers
+2024-01-01,City Hall,수,2734
+2024-04-15,Seoul Station,토,4180
+2024-11-11,Yeouido,수,4705
+2024-06-15,Gangnam,일,1707
+2024-11-06,Gangnam,금,4083
+2024-10-13,Gwanghwamun,금,1251
+2024-03-10,City Hall,토,2318
+2024-05-30,Dongdaemun,목,4195
+2024-11-16,City Hall,일,3363
+2024-05-06,Jamsil,화,718
+2024-01-09,Itaewon,목,3898
+2024-10-30,Seoul Station,금,936
+2024-01-28,Seoul Station,목,3747
+2024-12-19,City Hall,수,4612
+2024-09-01,Gangnam,수,3563
+2024-03-28,Gangnam,금,2431
+2024-06-17,Dongdaemun,일,3663
+2024-01-20,Jamsil,금,1168
+2024-10-29,Seoul Station,목,3571
+2024-12-13,Dongdaemun,목,2339
+2024-07-17,Gangnam,수,730
+2024-06-26,Dongdaemun,일,3110
+2024-01-15,Itaewon,화,1311
+2024-02-15,Gangnam,토,3246
+2024-02-20,Samseong,화,1696
+2024-03-14,Jamsil,금,1627
+2024-01-16,Yeouido,목,813
+2024-01-23,Seoul Station,화,2850
+2024-02-11,Gwanghwamun,일,4370
+2024-02-27,Itaewon,일,1636
+2024-03-09,Hongdae,목,4342
+2024-06-15,Yeouido,월,4174
+2024-08-05,Gwanghwamun,수,543
+2024-11-03,Gangnam,토,1149
+2024-01-26,Hongdae,목,655
+2024-04-08,City Hall,토,2596
+2024-11-02,City Hall,일,2266
+2024-05-14,Itaewon,목,1724
+2024-12-15,City Hall,목,4995
+2024-08-29,Hongdae,토,4823
+2024-08-18,Hongdae,일,3967
+2024-09-19,Jamsil,일,1410
+2024-12-23,Yeouido,토,2860
+2024-02-25,Seoul Station,화,2446
+2024-11-29,Samseong,목,2967
+2024-11-17,Dongdaemun,월,1498
+2024-05-07,City Hall,화,891
+2024-05-09,Itaewon,금,2453
+2024-05-05,City Hall,금,3939
+2024-09-25,Dongdaemun,수,4244
+2024-08-16,Yeouido,일,1014
+2024-09-10,Jamsil,월,1408
+2024-03-16,Hongdae,일,4594
+2024-12-04,Jamsil,일,4891
+2024-04-30,Gangnam,목,634
+2024-12-15,City Hall,월,4721
+2024-02-19,Seoul Station,금,2481
+2024-10-04,Gangnam,목,1676
+2024-12-24,Yeouido,월,2886
+2024-02-07,City Hall,토,4016
+2024-07-17,Gangnam,화,512
+2024-05-05,City Hall,목,3390
+2024-02-07,Itaewon,일,2470
+2024-07-15,Yeouido,토,3912
+2024-02-19,Samseong,화,2034
+2024-11-15,Hongdae,월,1201
+2024-07-14,Gwanghwamun,목,4788
+2024-04-08,Hongdae,일,3454
+2024-02-18,Hongdae,수,1054
+2024-02-07,Gangnam,수,4809
+2024-07-25,Yeouido,금,4957
+2024-01-17,City Hall,토,4656
+2024-06-24,Jamsil,목,4658
+2024-04-08,Gwanghwamun,토,666
+2024-12-09,Dongdaemun,월,3698
+2024-01-29,Gangnam,일,4351
+2024-11-13,Gwanghwamun,수,856
+2024-09-11,Samseong,일,3669
+2024-12-06,Itaewon,토,3558
+2024-11-16,Yeouido,일,2577
+2024-05-23,Dongdaemun,금,633
+2024-09-15,Gangnam,목,3425
+2024-02-17,Hongdae,수,1053
+2024-12-20,Seoul Station,토,3324
+2024-07-26,Gangnam,토,2475
+2024-03-07,Seoul Station,일,1349
+2024-07-04,Hongdae,목,3223
+2024-09-09,Itaewon,일,1592
+2024-06-30,Yeouido,금,863
+2024-01-28,City Hall,월,3386
+2024-01-04,Gangnam,금,4972
+2024-11-12,Jamsil,월,3273
+2024-02-04,Hongdae,화,1934
+2024-06-19,Gangnam,토,4306
+2024-11-08,Samseong,토,4420
+2024-06-21,Itaewon,수,1993
+2024-08-09,Samseong,화,1604
+2024-09-20,Gwanghwamun,토,1016
+2024-03-07,Yeouido,월,4249
+2024-08-07,Gwanghwamun,목,802
+2024-02-03,Gangnam,월,2903
+2024-03-24,Dongdaemun,일,2151
+2024-05-21,Dongdaemun,토,858
+2024-11-30,Yeouido,토,2134
+2024-05-22,Jamsil,일,843
+2024-03-26,Itaewon,월,3085
+2024-12-13,Jamsil,목,3040
+2024-05-27,Itaewon,화,4722
+2024-01-15,Hongdae,토,3762
+2024-05-29,Gangnam,수,4948
+2024-02-20,Gwanghwamun,월,4378
+2024-06-28,Dongdaemun,월,2575
+2024-06-21,Samseong,수,799
+2024-11-20,City Hall,일,2065
+2024-01-16,Seoul Station,월,2843
+2024-05-18,City Hall,수,3424
+2024-05-29,Gwanghwamun,수,891
+2024-10-31,Gwanghwamun,수,3219
+2024-01-07,Itaewon,목,2738
+2024-09-11,Jamsil,화,1519
+2024-05-23,City Hall,화,3514
+2024-03-18,Itaewon,금,4079
+2024-03-17,Itaewon,목,3776
+2024-06-20,Jamsil,금,4102
+2024-08-02,Samseong,토,3667
+2024-12-18,Dongdaemun,일,3277
+2024-04-04,Yeouido,화,2030
+2024-02-04,Dongdaemun,화,4564
+2024-09-13,Seoul Station,화,4575
+2024-03-31,City Hall,월,3509
+2024-10-31,Dongdaemun,금,4753
+2024-07-12,Yeouido,일,2684
+2024-06-29,Hongdae,목,1176
+2024-01-26,City Hall,금,3977
+2024-07-25,Yeouido,토,1146
+2024-08-19,Itaewon,화,4027
+2024-01-02,Gwanghwamun,목,1978
+2024-08-05,Samseong,금,4968
+2024-10-15,Seoul Station,화,2906
+2024-06-12,Yeouido,화,3131
+2024-01-21,Dongdaemun,목,1340
+2024-09-13,Gwanghwamun,토,1155
+2024-12-26,Dongdaemun,수,3186
+2024-09-28,City Hall,목,2921
+2024-11-29,Yeouido,수,3010
+2024-09-08,Dongdaemun,토,4152
+2024-05-22,Jamsil,월,3990
+2024-01-05,Gangnam,일,1865
+2024-06-05,Gwanghwamun,목,4136
+2024-08-20,Hongdae,수,3379
+2024-05-19,Gwanghwamun,토,4162
+2024-07-24,Dongdaemun,금,846
+2024-12-16,Dongdaemun,화,3388
+2024-12-17,Seoul Station,월,4063
+2024-01-27,Jamsil,목,2749
+2024-11-01,Hongdae,수,969
+2024-09-13,Samseong,금,1114
+2024-09-04,Seoul Station,수,3827
+2024-06-10,City Hall,토,3476
+2024-02-12,Hongdae,목,4703
+2024-06-04,Yeouido,토,1810
+2024-02-22,Gangnam,수,755
+2024-11-12,Seoul Station,목,1669
+2024-05-16,Gangnam,일,4089
+2024-05-25,Jamsil,수,785
+2024-02-07,City Hall,화,1534
+2024-10-02,City Hall,목,1050
+2024-03-31,Samseong,일,2433
+2024-12-16,City Hall,목,3500
+2024-03-24,Dongdaemun,월,3466
+2024-01-07,Gwanghwamun,화,3636
+2024-08-09,Gwanghwamun,목,765
+2024-11-07,Samseong,금,1756
+2024-05-30,Dongdaemun,수,4185
+2024-01-27,Gwanghwamun,금,3538
+2024-02-02,Yeouido,수,3547
+2024-07-08,Dongdaemun,토,4136
+2024-01-29,Jamsil,수,1129
+2024-04-16,Itaewon,월,1627
+2024-11-04,Gangnam,일,4837
+2024-02-15,Dongdaemun,토,3506
+2024-07-30,Gangnam,목,3760
+2024-06-19,Yeouido,수,3075
+2024-10-24,Itaewon,월,2783
+2024-02-23,Hongdae,금,2544
+2024-06-28,Samseong,일,1429
+2024-05-08,Dongdaemun,토,712
+2024-04-05,Samseong,일,2024
+2024-04-13,City Hall,토,4588
+2024-01-02,Gangnam,월,4741
+2024-04-04,Gangnam,금,3670
+2024-12-08,City Hall,토,1464
+2024-08-02,Hongdae,목,2644
+2024-11-01,Seoul Station,일,2632
+2024-02-27,Jamsil,수,4155
+2024-07-16,Dongdaemun,일,2257
+2024-05-22,Gangnam,일,2839
+2024-09-08,Jamsil,화,4523
+2024-10-21,Gangnam,금,2139
+2024-05-23,Seoul Station,일,1504
+2024-01-20,City Hall,수,1611
+2024-03-03,Seoul Station,화,1106
+2024-11-18,Gangnam,토,4203
+2024-04-26,City Hall,화,1914
+2024-04-23,Seoul Station,금,4146
+2024-06-09,Hongdae,수,1219
+2024-08-15,City Hall,토,3118
+2024-07-30,Dongdaemun,일,3346
+2024-04-25,Gangnam,토,1031
+2024-01-23,Yeouido,일,4941
+2024-09-19,Samseong,토,2878
+2024-09-10,Gangnam,토,2957
+2024-06-29,Dongdaemun,일,1790
+2024-12-02,Gwanghwamun,화,1926
+2024-04-04,Jamsil,토,3461
+2024-10-30,Jamsil,월,4667
+2024-03-06,Samseong,토,2336
+2024-01-22,Gangnam,토,1494
+2024-10-23,Samseong,월,2146
+2024-03-06,Itaewon,수,1637
+2024-12-25,Gangnam,일,2439
+2024-11-04,City Hall,목,4547
+2024-01-30,City Hall,월,715
+2024-09-23,Itaewon,금,3456
+2024-10-05,Hongdae,수,3522
+2024-08-23,Itaewon,토,4328
+2024-03-19,Itaewon,화,1563
+2024-02-28,Samseong,월,1206
+2024-12-09,Seoul Station,수,1038
+2024-09-09,City Hall,수,3033
+2024-02-05,Seoul Station,토,3761
+2024-09-29,Itaewon,목,4421
+2024-07-03,Hongdae,화,4806
+2024-03-04,City Hall,화,3865
+2024-04-13,Gangnam,화,3854
+2024-07-13,Gangnam,일,1104
+2024-06-26,Gangnam,금,1526
+2024-03-25,Dongdaemun,수,3097
+2024-03-16,Samseong,금,1107
+2024-06-03,Gwanghwamun,금,4186
+2024-07-05,Itaewon,수,4316
+2024-12-19,Gwanghwamun,일,4738
+2024-10-21,Yeouido,화,3322
+2024-05-13,Samseong,수,1551
+2024-05-28,Gangnam,일,1990
+2024-07-04,City Hall,목,1557
+2024-08-17,Samseong,일,4044
+2024-08-09,Dongdaemun,수,4619
+2024-09-02,City Hall,토,953
+2024-12-01,Seoul Station,일,1517
+2024-10-03,Dongdaemun,수,4744
+2024-01-25,Seoul Station,일,1753
+2024-11-30,City Hall,월,2991
+2024-07-28,Gangnam,목,1848
+2024-11-25,Gwanghwamun,월,1826
+2024-10-31,Itaewon,화,3143
+2024-06-30,Samseong,일,2347
+2024-06-14,Samseong,화,3334
+2024-10-21,Gangnam,일,4750
+2024-04-05,Itaewon,토,2826
+2024-03-04,Seoul Station,토,1146
+2024-10-09,Gwanghwamun,토,2552
+2024-04-01,Itaewon,목,2108
+2024-05-27,Seoul Station,일,2748
+2024-04-08,Itaewon,일,1525
+2024-07-11,Yeouido,금,2980
+2024-03-22,Samseong,수,4870
+2024-03-28,Yeouido,월,1265
+2024-02-28,Itaewon,일,4617
+2024-07-20,Dongdaemun,목,1881
+2024-05-11,Samseong,월,1763
+2024-03-05,Gwanghwamun,수,1902
+2024-01-28,Gangnam,금,3265
+2024-02-18,Yeouido,월,837
+2024-11-27,Gangnam,목,732
+2024-08-15,Seoul Station,수,1165
+2024-12-20,Jamsil,토,872
+2024-05-02,Dongdaemun,토,2668
+2024-09-14,Seoul Station,토,2226
+2024-10-20,Hongdae,수,3912
+2024-01-09,Seoul Station,금,748
+2024-03-13,Seoul Station,목,4579
+2024-10-26,Jamsil,일,4969
+2024-09-26,Samseong,토,2872
+2024-11-21,Dongdaemun,수,2974
+2024-05-01,Dongdaemun,월,4456
+2024-10-07,Gwanghwamun,토,2506
+2024-08-28,Seoul Station,화,3826
+2024-04-02,Dongdaemun,목,2936
+2024-06-02,City Hall,월,4215
+2024-03-23,Gwanghwamun,금,1097
+2024-12-07,City Hall,금,990
+2024-08-26,Jamsil,수,1794
+2024-10-12,City Hall,금,4101
+2024-09-23,Gangnam,화,3904
+2024-10-02,Itaewon,토,4466
+2024-03-14,City Hall,월,4304
+2024-10-01,Jamsil,토,2171
+2024-07-17,Gangnam,일,3286
+2024-08-24,Jamsil,목,1676
+2024-04-16,Jamsil,토,3060
+2024-07-15,Seoul Station,수,3115
+2024-12-13,Jamsil,토,3329
+2024-11-03,City Hall,목,3766
+2024-01-20,Itaewon,월,1571
+2024-12-15,Jamsil,화,3535
+2024-06-06,Jamsil,월,4718
+2024-09-20,Dongdaemun,월,1369
+2024-07-30,Hongdae,수,3114
+2024-06-06,Yeouido,목,2480
+2024-08-15,Gangnam,월,4321
+2024-11-12,Hongdae,월,1503
+2024-02-06,Gangnam,화,2691
+2024-08-14,Yeouido,금,4183
+2024-01-19,Itaewon,화,2530
+2024-03-10,Gwanghwamun,목,1654
+2024-05-08,Yeouido,목,1293
+2024-09-04,Samseong,수,914
+2024-06-07,Hongdae,토,2877
+2024-05-15,City Hall,토,3646
+2024-12-17,Seoul Station,토,3925
+2024-03-02,Samseong,금,2533
+2024-12-22,Jamsil,목,1808
+2024-09-04,Jamsil,금,3182
+2024-08-18,City Hall,토,3061
+2024-04-24,City Hall,토,2055
+2024-10-14,Dongdaemun,화,1805
+2024-03-19,Gangnam,목,4581
+2024-02-20,Dongdaemun,토,4716
+2024-03-30,Yeouido,월,4324
+2024-06-26,Gwanghwamun,일,4585
+2024-09-09,Hongdae,목,3027
+2024-08-04,City Hall,금,4574
+2024-05-10,Gangnam,목,689
+2024-04-12,Hongdae,수,1237
+2024-12-16,Yeouido,월,3721
+2024-08-14,Gwanghwamun,토,4640
+2024-04-25,Samseong,수,4245
+2024-04-26,Dongdaemun,화,2472
+2024-03-07,Yeouido,목,2262
+2024-02-11,Jamsil,목,3390
+2024-07-24,Dongdaemun,화,898
+2024-11-30,Seoul Station,일,914
+2024-10-29,Dongdaemun,수,2804
+2024-10-17,Yeouido,월,4554
+2024-03-07,City Hall,토,4355
+2024-11-18,Gwanghwamun,수,2840
+2024-02-21,Yeouido,금,4896
+2024-07-01,City Hall,토,566
+2024-09-09,City Hall,수,1380
+2024-06-12,Dongdaemun,월,4030
+2024-05-17,Gwanghwamun,목,1597
+2024-03-20,Yeouido,수,2666
+2024-11-17,Yeouido,화,3496
+2024-04-04,Jamsil,월,3803
+2024-03-29,Gangnam,일,3497
+2024-01-28,Hongdae,일,870
+2024-09-20,Gangnam,목,3781
+2024-09-08,Yeouido,월,919
+2024-04-28,Dongdaemun,토,2094
+2024-10-29,Samseong,화,3469
+2024-08-27,Yeouido,토,2864
+2024-07-13,Seoul Station,토,1102
+2024-10-17,City Hall,금,3664
+2024-02-07,Itaewon,월,4630
+2024-03-15,Yeouido,월,4189
+2024-02-13,Seoul Station,일,2791
+2024-02-23,Seoul Station,수,1473
+2024-07-10,Hongdae,화,1554
+2024-10-19,Gwanghwamun,화,1292
+2024-04-17,Yeouido,일,3726
+2024-12-04,Gwanghwamun,금,3557
+2024-06-27,Samseong,화,3277
+2024-04-21,Dongdaemun,월,3495
+2024-02-12,Itaewon,일,1681
+2024-03-01,Dongdaemun,일,2130
+2024-08-12,Seoul Station,금,4670
+2024-02-04,City Hall,화,3788
+2024-10-01,City Hall,금,4596
+2024-09-21,Gwanghwamun,화,829
+2024-06-17,Dongdaemun,일,871
+2024-11-22,Seoul Station,일,818
+2024-03-08,Hongdae,화,1622
+2024-12-25,Jamsil,수,3228
+2024-02-04,Dongdaemun,일,4380
+2024-02-11,Gwanghwamun,화,4754
+2024-01-20,Itaewon,일,4243
+2024-07-09,Gwanghwamun,금,1720
+2024-01-04,Seoul Station,월,4723
+2024-01-18,Yeouido,수,1645
+2024-11-14,Hongdae,일,3186
+2024-06-28,Seoul Station,화,3109
+2024-12-17,Hongdae,화,1831
+2024-12-12,Gangnam,금,3719
+2024-12-18,Gangnam,수,2951
+2024-11-11,City Hall,일,3255
+2024-06-16,Hongdae,화,4655
+2024-10-18,Dongdaemun,월,4675
+2024-10-07,Itaewon,토,4860
+2024-08-25,Jamsil,일,4512
+2024-02-05,Gwanghwamun,월,2955
+2024-04-22,Gangnam,화,4390
+2024-09-27,Gwanghwamun,월,636
+2024-02-06,Gwanghwamun,수,3517
+2024-07-12,Itaewon,일,3213
+2024-08-22,Seoul Station,일,1397
+2024-06-11,Gwanghwamun,화,3912
+2024-06-27,Hongdae,금,3020
+2024-09-25,Itaewon,수,718
+2024-02-23,Gangnam,월,4387
+2024-07-19,Yeouido,화,2675
+2024-03-01,Gwanghwamun,수,2364
+2024-09-30,City Hall,월,920
+2024-08-04,Itaewon,화,4435
+2024-06-18,Seoul Station,토,1896
+2024-10-12,Samseong,목,4794
+2024-10-20,Gangnam,금,3614
+2024-07-31,Gangnam,월,1710
+2024-05-25,Samseong,토,2484
+2024-12-09,Hongdae,월,758
+2024-09-29,Yeouido,목,1400
+2024-10-12,Gangnam,목,2062
+2024-08-24,Gangnam,일,655
+2024-02-08,Seoul Station,수,4112
+2024-10-13,Gangnam,금,3069
+2024-06-28,Itaewon,금,3930
+2024-06-20,Hongdae,월,1740
+2024-05-03,Yeouido,목,3882
+2024-12-18,City Hall,금,2170
+2024-11-21,Yeouido,화,3861
+2024-05-18,Hongdae,금,4610
+2024-03-27,Dongdaemun,월,4363
+2024-10-01,Itaewon,토,1010
+2024-09-20,Dongdaemun,일,1631
+2024-05-19,Hongdae,일,4749
+2024-07-06,Seoul Station,토,2198
+2024-12-29,City Hall,금,3162
+2024-12-08,Yeouido,수,4418
+2024-02-17,Gwanghwamun,목,4804
+2024-08-24,Jamsil,토,3586
+2024-02-24,Yeouido,월,3070
+2024-05-19,Seoul Station,월,1918
+2024-08-05,City Hall,목,4265
+2024-09-11,Jamsil,일,4867
+2024-07-26,Itaewon,목,3304
+2024-01-01,Hongdae,목,4975
+2024-10-24,Hongdae,토,3402
+2024-01-16,Itaewon,월,2665
+2024-03-09,Jamsil,목,4466
+2024-09-30,Dongdaemun,토,2075
+2024-02-19,City Hall,목,2519
+2024-05-03,Itaewon,월,2785
+2024-02-27,Jamsil,월,2945
+2024-08-22,Gangnam,수,2342
+2024-03-06,Yeouido,금,2938
+2024-01-01,Seoul Station,화,2867
+2024-11-20,Itaewon,월,2198
+2024-01-08,Seoul Station,화,4505
+2024-09-18,Dongdaemun,수,3097
+2024-10-03,Dongdaemun,금,4430
+2024-10-13,Gangnam,토,3357
+2024-05-21,Hongdae,금,2740
+2024-02-06,Itaewon,금,2857
+2024-11-30,City Hall,토,1498
+2024-11-26,Hongdae,수,4949
+2024-01-27,Jamsil,목,3610
+2024-10-15,Hongdae,금,3732
+2024-02-09,City Hall,금,3327
+2024-02-19,Yeouido,수,1699
+2024-10-02,Dongdaemun,목,2879
+2024-11-10,Yeouido,금,844
+2024-02-27,Itaewon,금,2856
+2024-08-09,Hongdae,목,1147
+2024-12-31,Itaewon,월,3337
+2024-08-16,Yeouido,일,4123
+2024-12-11,Dongdaemun,토,2600
+2024-08-01,Gwanghwamun,월,4424
+2024-10-17,Gangnam,일,2252
+2024-12-23,Itaewon,토,2155
+2024-06-15,Itaewon,토,4912
+2024-06-02,Gwanghwamun,일,2721
+2024-06-02,Jamsil,금,2725
+2024-02-19,Jamsil,토,1624
+2024-11-30,Yeouido,일,1394
+2024-05-26,Itaewon,화,2460
+2024-05-28,Dongdaemun,목,2486
+2024-02-21,Seoul Station,목,915
+2024-12-09,Yeouido,화,4850
+2024-06-17,Yeouido,목,2348
+2024-09-27,Gangnam,수,2407
+2024-02-28,Itaewon,일,930
+2024-06-15,Jamsil,목,1320
+2024-03-10,Jamsil,목,3885
+2024-05-31,Hongdae,목,3205
+2024-06-13,Samseong,토,4369
+2024-08-17,Samseong,월,1323
+2024-06-05,Samseong,수,1626
+2024-06-12,Gangnam,목,542
+2024-12-09,Dongdaemun,수,1793
+2024-09-19,Samseong,토,3833
+2024-08-13,Gwanghwamun,수,4396
+2024-10-09,City Hall,수,4411
+2024-04-29,Yeouido,화,2133
+2024-11-23,Dongdaemun,토,2853
+2024-07-29,Jamsil,목,3131
+2024-01-08,Hongdae,월,2838
+2024-04-01,City Hall,월,984
+2024-06-06,Gangnam,일,1232
+2024-11-18,Yeouido,월,2402
+2024-03-15,Gangnam,월,4883
+2024-01-19,Gangnam,목,805
+2024-04-12,Gwanghwamun,월,1934
+2024-02-03,Seoul Station,토,3923
+2024-08-17,Seoul Station,토,1940
+2024-11-25,Gangnam,수,797
+2024-06-10,Samseong,일,3752
+2024-07-27,Jamsil,화,4558
+2024-02-12,City Hall,금,2026
+2024-07-08,Samseong,월,2871
+2024-07-10,Itaewon,금,806
+2024-11-22,Jamsil,금,575
+2024-04-20,Gangnam,금,2944
+2024-12-15,Itaewon,수,1379
+2024-06-05,Samseong,토,3244
+2024-02-07,Itaewon,월,2831
+2024-10-01,Gangnam,목,4222
+2024-01-07,Gwanghwamun,수,4950
+2024-05-04,Seoul Station,일,4795
+2024-02-13,City Hall,토,4546
+2024-04-23,Itaewon,일,1599
+2024-01-10,Gangnam,목,4630
+2024-08-10,Gwanghwamun,일,4334
+2024-07-07,Dongdaemun,토,2735
+2024-02-16,Samseong,월,2079
+2024-07-07,Seoul Station,수,1422
+2024-09-19,Dongdaemun,금,3208
+2024-02-13,Gangnam,수,1831
+2024-01-05,City Hall,수,4259
+2024-09-24,Samseong,월,2607
+2024-11-20,Gwanghwamun,금,2025
+2024-02-18,Samseong,금,615
+2024-05-22,Dongdaemun,화,3261
+2024-05-01,Dongdaemun,화,2916
+2024-11-05,Jamsil,토,2082
+2024-03-26,Hongdae,목,1937
+2024-07-05,Samseong,화,3821
+2024-05-20,Jamsil,일,4003
+2024-02-13,Dongdaemun,월,4721
+2024-11-19,Itaewon,수,3186
+2024-04-16,Dongdaemun,일,1210
+2024-12-14,Samseong,금,3783
+2024-01-23,Gwanghwamun,수,1281
+2024-07-09,Samseong,월,2013
+2024-12-29,Samseong,일,1651
+2024-08-03,Yeouido,수,4411
+2024-06-14,Gangnam,금,3150
+2024-06-16,Yeouido,화,2532
+2024-10-26,Dongdaemun,일,555
+2024-05-19,Samseong,목,2636
+2024-08-11,Gangnam,일,3642
+2024-05-19,Yeouido,금,2429
+2024-08-17,Samseong,일,4159
+2024-08-05,City Hall,일,2687
+2024-03-05,Yeouido,금,3200
+2024-03-30,Gangnam,금,2973
+2024-03-27,Yeouido,토,593
+2024-09-30,Hongdae,토,2642
+2024-01-07,Hongdae,금,3445
+2024-08-24,Dongdaemun,월,2435
+2024-06-01,City Hall,금,1008
+2024-12-15,Gwanghwamun,토,1468
+2024-08-17,Gwanghwamun,일,4312
+2024-02-15,Gangnam,토,3013
+2024-08-28,Itaewon,수,1808
+2024-02-26,Gwanghwamun,월,3821
+2024-12-25,Gangnam,화,4616
+2024-09-20,City Hall,수,3047
+2024-02-14,Itaewon,토,1461
+2024-06-25,Itaewon,일,2916
+2024-04-05,Hongdae,수,3510
+2024-12-25,Dongdaemun,수,2309
+2024-04-07,Samseong,수,2295
+2024-11-18,Itaewon,월,1594
+2024-03-29,Seoul Station,화,4417
+2024-10-19,Gangnam,일,1754
+2024-01-10,Itaewon,화,4227
+2024-06-18,Itaewon,금,3560
+2024-10-03,Jamsil,토,3906
+2024-08-22,Seoul Station,목,4999
+2024-09-20,Jamsil,월,4357
+2024-07-06,Itaewon,화,4903
+2024-06-21,Samseong,토,2289
+2024-08-11,Seoul Station,토,2527
+2024-11-15,Hongdae,월,1170
+2024-08-05,Yeouido,월,4804
+2024-02-20,Itaewon,토,4159
+2024-02-07,Itaewon,금,4826
+2024-09-02,Dongdaemun,화,3463
+2024-08-21,Dongdaemun,목,1139
+2024-07-22,Jamsil,목,1419
+2024-08-25,Gangnam,목,1005
+2024-07-13,Samseong,수,4986
+2024-08-22,Gangnam,화,4640
+2024-04-17,Yeouido,수,2156
+2024-07-12,Itaewon,수,4896
+2024-12-16,Samseong,토,1727
+2024-06-30,Seoul Station,수,1847
+2024-10-04,Itaewon,일,3187
+2024-02-19,Hongdae,금,4762
+2024-05-31,Itaewon,금,4119
+2024-10-28,Gwanghwamun,월,1452
+2024-09-23,Samseong,월,2182
+2024-11-06,Gwanghwamun,화,4504
+2024-10-01,Jamsil,화,1244
+2024-03-07,Dongdaemun,일,4680
+2024-10-28,Seoul Station,금,4149
+2024-08-06,Itaewon,월,955
+2024-07-01,Jamsil,토,4214
+2024-12-01,Jamsil,월,1580
+2024-03-23,Seoul Station,수,4704
+2024-03-29,City Hall,목,3903
+2024-12-05,Itaewon,토,4242
+2024-12-24,Gwanghwamun,목,972
+2024-10-19,Samseong,목,4287
+2024-10-28,Gwanghwamun,금,3024
+2024-01-12,Seoul Station,목,678
+2024-09-01,Yeouido,목,3743
+2024-04-20,Itaewon,수,2584
+2024-11-19,Hongdae,화,524
+2024-06-18,Gangnam,일,2285
+2024-06-21,Samseong,금,1098
+2024-05-24,Hongdae,월,871
+2024-03-07,Hongdae,수,3970
+2024-11-10,Itaewon,목,3322
+2024-10-12,Yeouido,월,1022
+2024-04-10,Itaewon,수,4933
+2024-02-24,Yeouido,토,993
+2024-11-25,City Hall,토,1065
+2024-10-15,Samseong,금,4367
+2024-04-07,Seoul Station,목,759
+2024-09-06,Dongdaemun,금,2851
+2024-06-01,Seoul Station,토,3849
+2024-10-30,Hongdae,수,1974
+2024-12-13,Gangnam,월,1609
+2024-11-02,City Hall,화,3943
+2024-08-16,Seoul Station,목,3567
+2024-10-14,Seoul Station,금,3633
+2024-07-21,Gangnam,월,4174
+2024-02-23,Gangnam,월,3592
+2024-08-05,Seoul Station,화,3577
+2024-12-19,Jamsil,수,1157
+2024-05-27,Gwanghwamun,화,4917
+2024-09-20,Gangnam,일,1589
+2024-01-31,Gwanghwamun,화,3348
+2024-02-15,Samseong,일,1471
+2024-06-04,City Hall,수,1962
+2024-06-11,Jamsil,수,4901
+2024-10-24,Gangnam,수,3719
+2024-09-07,Samseong,월,4832
+2024-10-27,Yeouido,월,1543
+2024-11-23,Hongdae,목,2324
+2024-09-10,Gwanghwamun,토,528
+2024-04-21,Jamsil,목,686
+2024-06-01,Jamsil,화,2944
+2024-02-12,City Hall,화,4292
+2024-05-28,Gwanghwamun,목,4960
+2024-07-05,Yeouido,금,3974
+2024-04-07,City Hall,토,4857
+2024-05-23,Jamsil,화,3607
+2024-10-14,Seoul Station,금,2381
+2024-04-09,Yeouido,금,2527
+2024-01-25,Jamsil,일,4273
+2024-03-03,Itaewon,토,3335
+2024-12-25,Itaewon,일,1770
+2024-04-02,Gangnam,수,2758
+2024-03-20,City Hall,월,2044
+2024-02-11,Jamsil,목,1424
+2024-12-21,Gangnam,일,763
+2024-03-24,City Hall,토,3934
+2024-06-21,Yeouido,월,628
+2024-10-02,Jamsil,목,2471
+2024-07-08,City Hall,월,2188
+2024-05-22,Jamsil,목,1051
+2024-11-16,Seoul Station,월,1326
+2024-01-02,Hongdae,일,775
+2024-09-14,Dongdaemun,수,4157
+2024-03-15,Itaewon,금,898
+2024-01-09,Hongdae,목,2504
+2024-07-14,City Hall,금,862
+2024-07-31,Dongdaemun,목,3795
+2024-06-24,Hongdae,토,4095
+2024-05-04,Seoul Station,토,2419
+2024-05-07,Itaewon,목,4921
+2024-09-17,Samseong,수,2279
+2024-12-26,City Hall,월,962
+2024-09-19,Itaewon,목,1647
+2024-12-21,Hongdae,월,4627
+2024-04-17,Samseong,수,2869
+2024-04-15,Gwanghwamun,화,2418
+2024-09-29,Itaewon,일,3112
+2024-07-02,Gwanghwamun,금,3126
+2024-12-26,Dongdaemun,목,2440
+2024-02-15,Yeouido,일,2972
+2024-11-16,Jamsil,토,1673
+2024-12-01,Dongdaemun,수,4770
+2024-11-09,Samseong,월,2310
+2024-06-07,Samseong,목,3887
+2024-07-29,Itaewon,일,2961
+2024-02-05,Jamsil,월,2754
+2024-09-18,Yeouido,화,999
+2024-10-28,Hongdae,목,1934
+2024-10-01,Gangnam,금,3999
+2024-12-23,City Hall,목,4560
+2024-06-06,Yeouido,금,884
+2024-08-28,Samseong,월,3321
+2024-07-18,Gangnam,목,3622
+2024-08-27,Samseong,일,4796
+2024-07-23,Jamsil,수,3111
+2024-06-25,Jamsil,토,3910
+2024-03-29,Itaewon,수,3844
+2024-12-29,Hongdae,화,1722
+2024-05-14,Seoul Station,수,2956
+2024-03-03,Samseong,일,3583
+2024-05-06,Hongdae,화,2006
+2024-04-23,Gwanghwamun,월,4906
+2024-03-10,Samseong,금,4379
+2024-05-01,Gangnam,토,2474
+2024-04-26,Hongdae,월,2346
+2024-04-20,Yeouido,금,2963
+2024-03-05,Hongdae,금,1682
+2024-08-04,Yeouido,화,4293
+2024-10-27,Jamsil,일,972
+2024-04-11,Yeouido,수,3880
+2024-02-29,Dongdaemun,수,3912
+2024-03-18,Seoul Station,토,4841
+2024-10-30,Dongdaemun,일,1598
+2024-07-13,Gangnam,토,3681
+2024-05-17,City Hall,일,2489
+2024-02-17,Gangnam,화,2588
+2024-05-23,Itaewon,화,2165
+2024-12-09,Samseong,월,3205
+2024-03-31,Dongdaemun,화,1147
+2024-12-27,Gangnam,수,4184
+2024-08-08,Samseong,화,3539
+2024-08-16,Samseong,화,1257
+2024-05-19,Samseong,금,4887
+2024-05-18,Seoul Station,화,2060
+2024-01-17,City Hall,일,922
+2024-05-17,Yeouido,일,2699
+2024-07-07,Gangnam,토,3589
+2024-10-03,Itaewon,월,823
+2024-12-16,Gangnam,화,1096
+2024-07-22,Yeouido,일,2041
+2024-10-04,Jamsil,토,2277
+2024-07-06,Hongdae,목,4427
+2024-01-13,Samseong,목,2211
+2024-10-14,Dongdaemun,일,3227
+2024-11-16,Dongdaemun,금,2983
+2024-09-17,Hongdae,일,625
+2024-09-19,Itaewon,금,2235
+2024-03-20,Dongdaemun,목,2056
+2024-03-14,Hongdae,토,1461
+2024-07-03,Hongdae,금,4423
+2024-08-03,Samseong,토,2487
+2024-12-22,Yeouido,토,2175
+2024-09-23,Yeouido,금,3749
+2024-04-14,Yeouido,수,2460
+2024-06-04,Gangnam,일,3134
+2024-04-02,City Hall,토,2818
+2024-02-19,Gangnam,수,3618
+2024-09-25,Hongdae,화,4319
+2024-04-08,City Hall,목,4871
+2024-11-04,Dongdaemun,월,3443
+2024-06-24,Gwanghwamun,목,3026
+2024-07-29,Gangnam,목,2642
+2024-02-09,Gangnam,토,3446
+2024-02-06,Samseong,수,4700
+2024-08-28,Yeouido,일,4573
+2024-09-18,Jamsil,수,4317
+2024-11-07,Dongdaemun,금,1307
+2024-10-21,Jamsil,월,4346
+2024-09-29,Yeouido,수,3123
+2024-09-20,City Hall,금,2164
+2024-05-29,Gangnam,월,3536
+2024-07-19,Yeouido,수,3063
+2024-03-11,Gangnam,목,3890
+2024-10-31,Hongdae,목,874
+2024-02-17,Gwanghwamun,월,2312
+2024-05-02,Yeouido,월,1695
+2024-04-07,Seoul Station,수,632
+2024-06-11,Dongdaemun,일,2636
+2024-07-18,Gwanghwamun,수,3920
+2024-06-25,Yeouido,월,2918
+2024-08-01,Seoul Station,토,1748
+2024-03-08,Seoul Station,일,2107
+2024-03-27,Dongdaemun,일,3202
+2024-08-08,Yeouido,월,2384
+2024-03-21,Gwanghwamun,금,3611
+2024-09-08,Samseong,금,2513
+2024-07-27,City Hall,금,4590
+2024-05-20,Seoul Station,목,3265
+2024-06-21,Jamsil,목,2608
+2024-11-17,Yeouido,금,4502
+2024-09-11,Samseong,금,4518
+2024-03-08,Samseong,일,4275
+2024-03-08,Samseong,토,1878
+2024-08-04,Hongdae,월,3385
+2024-11-07,Gwanghwamun,목,1886
+2024-11-28,Seoul Station,일,1646
+2024-07-25,Yeouido,금,4977
+2024-03-12,Samseong,토,4500
+2024-05-24,City Hall,화,2007
+2024-03-14,City Hall,수,4941
+2024-10-13,Itaewon,금,981
+2024-11-16,Samseong,목,4792
+2024-01-25,City Hall,금,777
+2024-12-26,Jamsil,화,1108
+2024-05-27,Seoul Station,월,897
+2024-11-22,Gwanghwamun,목,552
+2024-06-19,Gwanghwamun,월,3878
+2024-12-06,Jamsil,일,1626
+2024-09-11,Yeouido,일,2395
+2024-08-18,City Hall,수,1056
+2024-07-05,Gangnam,토,1737
+2024-10-12,City Hall,월,574
+2024-07-30,Dongdaemun,금,2291
+2024-02-06,Itaewon,토,4642
+2024-05-17,Jamsil,화,4235
+2024-12-21,Jamsil,월,3557
+2024-01-31,Jamsil,화,995
+2024-09-03,Gangnam,토,4458
+2024-11-11,Dongdaemun,목,4496
+2024-07-28,Itaewon,목,628
+2024-08-12,Samseong,금,554
+2024-02-14,Samseong,금,4859
+2024-03-24,Yeouido,금,3869
+2024-03-24,Jamsil,화,597
+2024-10-13,Itaewon,수,637
+2024-08-04,Yeouido,수,4836
+2024-09-25,Jamsil,수,2750
+2024-10-16,Jamsil,목,4888
+2024-05-07,Seoul Station,목,2848
+2024-09-03,Jamsil,일,640
+2024-11-09,City Hall,수,4614
+2024-07-08,Gangnam,토,4027
+2024-12-26,Gangnam,금,1968
+2024-07-04,Yeouido,월,1376
+2024-07-06,City Hall,일,1289
+2024-08-30,Gwanghwamun,토,4795
+2024-09-19,Gangnam,토,1719
+2024-03-12,Gwanghwamun,수,2474
+2024-12-22,Dongdaemun,월,2072
+2024-07-28,City Hall,수,4812
+2024-06-12,Gwanghwamun,월,2567
+2024-12-30,Seoul Station,금,3403
+2024-10-07,Itaewon,토,2689
+2024-08-17,Samseong,목,3751
+2024-08-19,Jamsil,수,1147
+2024-02-24,Samseong,수,3556
+2024-04-08,Yeouido,토,3826
+2024-11-19,Seoul Station,일,4260
+2024-02-24,Gangnam,토,2492
+2024-12-03,Yeouido,금,2350
+2024-08-04,Yeouido,일,2957
+2024-04-26,Samseong,화,1160
+2024-09-10,City Hall,수,759
+2024-07-13,Gangnam,월,1265
+2024-07-12,Yeouido,금,3820
+2024-09-28,Jamsil,토,3606
+2024-09-11,Gangnam,화,3589
+2024-07-18,Itaewon,수,4399
+2024-09-28,City Hall,수,959
+2024-07-26,Dongdaemun,토,577
+2024-04-29,Gangnam,토,1903
+2024-05-09,Gwanghwamun,토,1177
+2024-03-09,Yeouido,목,4594
+2024-02-02,Gwanghwamun,화,4054
+2024-10-07,City Hall,금,3213
+2024-11-30,Seoul Station,토,1281
+2024-01-30,Gwanghwamun,월,4826
+2024-08-20,Yeouido,수,848
+2024-11-13,Jamsil,금,2382
+2024-06-04,Jamsil,목,2231
+2024-09-05,Yeouido,토,4395
+2024-02-28,Samseong,일,2720
+2024-01-28,City Hall,수,881
+2024-06-27,Samseong,일,1109
+2024-05-03,Yeouido,화,2796
+2024-09-12,Itaewon,토,4948
+2024-06-14,Yeouido,토,769
+2024-12-20,Dongdaemun,일,1969
+2024-05-24,Dongdaemun,토,3076
+2024-05-25,Samseong,토,628
+2024-07-10,Samseong,금,2197
+2024-02-28,City Hall,월,1681
+2024-02-06,Jamsil,토,3762
+2024-12-24,Seoul Station,토,1130
+2024-04-21,Itaewon,목,2951
+2024-03-13,Hongdae,금,1830
+2024-10-10,Jamsil,수,2469
+2024-11-08,Yeouido,월,3687
+2024-10-05,Seoul Station,수,4928
+2024-05-04,City Hall,수,3217
+2024-11-01,Gangnam,화,3644
+2024-04-06,Jamsil,화,1646
+2024-11-25,Jamsil,수,1142
+2024-11-09,Seoul Station,일,4602
+2024-04-24,Yeouido,목,3333
+2024-08-24,Jamsil,화,939
+2024-02-23,Seoul Station,화,1300
+2024-02-01,Gwanghwamun,화,4080
+2024-01-20,Samseong,화,2401
+2024-07-21,Dongdaemun,월,1122
+2024-12-17,Samseong,수,3290
+2024-08-16,Yeouido,일,3749
+2024-12-13,Gwanghwamun,일,3173
+2024-10-30,Jamsil,월,742
+2024-05-09,Itaewon,금,2739
+2024-05-31,Samseong,일,4190
+2024-03-02,City Hall,금,4519
+2024-08-06,Samseong,일,2368
+2024-07-06,Hongdae,토,3414
+2024-06-01,Itaewon,금,3575
+2024-03-25,Hongdae,월,4037
+2024-06-25,Hongdae,토,2021
+2024-10-19,City Hall,수,3613
+2024-10-09,Gwanghwamun,일,1202
+2024-06-01,Hongdae,금,2919
+2024-10-20,Itaewon,화,2518
+2024-04-06,Samseong,금,1102
+2024-06-10,Yeouido,목,1172
+2024-12-21,Itaewon,화,2695
+2024-05-20,Dongdaemun,화,1763
+2024-06-27,Seoul Station,화,3612
+2024-12-09,Samseong,일,1763
+2024-01-10,City Hall,토,3691
+2024-01-11,Hongdae,일,3094
+2024-03-13,Yeouido,금,3454
+2024-08-05,Hongdae,일,1372
+2024-04-11,City Hall,화,1249
+2024-03-14,Itaewon,토,542
+2024-10-07,Dongdaemun,목,3025
+2024-05-11,Seoul Station,월,4143
+2024-03-18,Dongdaemun,목,3448
+2024-10-02,Samseong,수,2709
+2024-11-07,Itaewon,토,1337
+2024-11-02,Seoul Station,토,1585
+2024-05-16,Gangnam,화,1215
+2024-05-07,Dongdaemun,목,2035
+2024-03-07,Hongdae,금,4030
+2024-01-20,Jamsil,수,4176
+2024-01-01,Samseong,일,4697
+2024-09-08,Samseong,토,3842
+2024-09-30,Seoul Station,일,1346
+2024-03-13,Gangnam,목,715
+2024-01-20,Yeouido,화,1234
+2024-07-07,Dongdaemun,금,3399
+2024-04-29,Gwanghwamun,화,1262
+2024-12-29,Yeouido,수,3157
+2024-12-04,Samseong,일,3655
+2024-01-03,Samseong,일,601
+2024-11-03,City Hall,목,2890
+2024-10-04,Seoul Station,일,3889
+2024-07-29,Jamsil,화,3676
+2024-05-16,Gangnam,수,1193
+2024-07-26,Gwanghwamun,토,2488
+2024-09-14,Yeouido,금,4768
+2024-10-20,Dongdaemun,목,1889
+2024-07-03,Seoul Station,목,3618
+2024-05-23,Dongdaemun,일,1888
+2024-02-08,Itaewon,수,1637
+2024-06-27,City Hall,일,2702
+2024-01-15,Gangnam,목,2966
+2024-04-30,City Hall,금,2698
+2024-05-12,Samseong,금,4539
+2024-06-23,City Hall,목,1695
+2024-04-24,Gwanghwamun,화,1018
+2024-06-09,Samseong,일,1869
+2024-02-21,Yeouido,화,4060
+2024-07-04,Dongdaemun,일,2760
+2024-01-01,Yeouido,금,3949
+2024-04-01,Itaewon,화,2955
+2024-06-15,Samseong,일,4466
+2024-08-05,Samseong,수,1130
+2024-01-19,Gangnam,월,3458
+2024-05-25,Samseong,토,2561
+2024-04-11,Dongdaemun,목,2520
+2024-08-23,Gwanghwamun,일,4561
+2024-04-30,Itaewon,수,2101
+2024-09-06,Gangnam,금,4250
+2024-02-17,Jamsil,월,1376
+2024-07-13,Dongdaemun,토,1609
+2024-08-24,Gwanghwamun,일,2995
+2024-08-09,City Hall,금,555
+2024-05-23,Yeouido,일,3741
+2024-10-31,Itaewon,월,3221
+2024-08-23,Hongdae,수,3612
+2024-09-29,Dongdaemun,월,3199
+2024-12-27,Yeouido,일,4106
+2024-04-10,Seoul Station,화,3242
