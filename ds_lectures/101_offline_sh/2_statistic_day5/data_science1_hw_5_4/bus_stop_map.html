@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b220e18331defe5c0b4f4606443a3aeb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b220e18331defe5c0b4f4606443a3aeb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b220e18331defe5c0b4f4606443a3aeb = L.map(
+                "map_b220e18331defe5c0b4f4606443a3aeb",
+                {
+                    center: [37.4979, 127.0276],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c61db0105469dcb2a5f66b2668a766f5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c61db0105469dcb2a5f66b2668a766f5.addTo(map_b220e18331defe5c0b4f4606443a3aeb);
+        
+    
+            var marker_526c55384bd64e34c5b7ebf65cab90fa = L.marker(
+                [37.4979, 127.0276],
+                {
+}
+            ).addTo(map_b220e18331defe5c0b4f4606443a3aeb);
+        
+    
+        var popup_a7eafb36a366530dd0a6769ad42b9497 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_48652ee331fbfeeee9be87f508d3dd0a = $(`<div id="html_48652ee331fbfeeee9be87f508d3dd0a" style="width: 100.0%; height: 100.0%;">강남구민체육관 (23863)</div>`)[0];
+                popup_a7eafb36a366530dd0a6769ad42b9497.setContent(html_48652ee331fbfeeee9be87f508d3dd0a);
+            
+        
+
+        marker_526c55384bd64e34c5b7ebf65cab90fa.bindPopup(popup_a7eafb36a366530dd0a6769ad42b9497)
+        ;
+
+        
+    
+    
+            marker_526c55384bd64e34c5b7ebf65cab90fa.bindTooltip(
+                `<div>
+                     23863
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5838b0ce60603a9a16c3d1a75ccd6609 = L.marker(
+                [37.4979, 127.0276],
+                {
+}
+            ).addTo(map_b220e18331defe5c0b4f4606443a3aeb);
+        
+    
+        var popup_e0655b28d4d165449d2d7e01e2bdf833 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b83878b1c52b3e660cb1a33c5e930f57 = $(`<div id="html_b83878b1c52b3e660cb1a33c5e930f57" style="width: 100.0%; height: 100.0%;">강남구보건소 (23200)</div>`)[0];
+                popup_e0655b28d4d165449d2d7e01e2bdf833.setContent(html_b83878b1c52b3e660cb1a33c5e930f57);
+            
+        
+
+        marker_5838b0ce60603a9a16c3d1a75ccd6609.bindPopup(popup_e0655b28d4d165449d2d7e01e2bdf833)
+        ;
+
+        
+    
+    
+            marker_5838b0ce60603a9a16c3d1a75ccd6609.bindTooltip(
+                `<div>
+                     23200
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2f8781285f2215e345e50588b7b0bf76 = L.marker(
+                [37.4979, 127.0276],
+                {
+}
+            ).addTo(map_b220e18331defe5c0b4f4606443a3aeb);
+        
+    
+        var popup_2ee1060d33af48c56ebae01b8e23cb3a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7eb777eafdc5459518d213b847d5c073 = $(`<div id="html_7eb777eafdc5459518d213b847d5c073" style="width: 100.0%; height: 100.0%;">강남구보건소 (23290)</div>`)[0];
+                popup_2ee1060d33af48c56ebae01b8e23cb3a.setContent(html_7eb777eafdc5459518d213b847d5c073);
+            
+        
+
+        marker_2f8781285f2215e345e50588b7b0bf76.bindPopup(popup_2ee1060d33af48c56ebae01b8e23cb3a)
+        ;
+
+        
+    
+    
+            marker_2f8781285f2215e345e50588b7b0bf76.bindTooltip(
+                `<div>
+                     23290
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8baf5ee312802355e5921d49993e7982 = L.marker(
+                [37.4979, 127.0276],
+                {
+}
+            ).addTo(map_b220e18331defe5c0b4f4606443a3aeb);
+        
+    
+        var popup_189780cd932ad82d9c1ecc3ed2667da8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b24f7c22fa8fe1831bfd371055149ede = $(`<div id="html_b24f7c22fa8fe1831bfd371055149ede" style="width: 100.0%; height: 100.0%;">강남구청.강남세무서 (23176)</div>`)[0];
+                popup_189780cd932ad82d9c1ecc3ed2667da8.setContent(html_b24f7c22fa8fe1831bfd371055149ede);
+            
+        
+
+        marker_8baf5ee312802355e5921d49993e7982.bindPopup(popup_189780cd932ad82d9c1ecc3ed2667da8)
+        ;
+
+        
+    
+    
+            marker_8baf5ee312802355e5921d49993e7982.bindTooltip(
+                `<div>
+                     23176
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fadc397b92a192a80926ff02f8d1dc26 = L.marker(
+                [37.4979, 127.0276],
+                {
+}
+            ).addTo(map_b220e18331defe5c0b4f4606443a3aeb);
+        
+    
+        var popup_adb8be4141886ddaf8cf23bb4372ab9a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1323445341d8d46e49fbb34fbb4d2e7a = $(`<div id="html_1323445341d8d46e49fbb34fbb4d2e7a" style="width: 100.0%; height: 100.0%;">강남구청.강남세무서 (23206)</div>`)[0];
+                popup_adb8be4141886ddaf8cf23bb4372ab9a.setContent(html_1323445341d8d46e49fbb34fbb4d2e7a);
+            
+        
+
+        marker_fadc397b92a192a80926ff02f8d1dc26.bindPopup(popup_adb8be4141886ddaf8cf23bb4372ab9a)
+        ;
+
+        
+    
+    
+            marker_fadc397b92a192a80926ff02f8d1dc26.bindTooltip(
+                `<div>
+                     23206
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
