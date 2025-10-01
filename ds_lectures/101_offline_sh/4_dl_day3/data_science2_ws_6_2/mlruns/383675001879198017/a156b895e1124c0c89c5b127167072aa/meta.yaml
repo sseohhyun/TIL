@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/SSAFY/Desktop/TIL/ds_lectures/101_offline_sh/4_dl_day3/data_science2_ws_6_2/mlruns/383675001879198017/a156b895e1124c0c89c5b127167072aa/artifacts
+end_time: 1759296204207
+entry_point_name: ''
+experiment_id: '383675001879198017'
+lifecycle_stage: active
+run_id: a156b895e1124c0c89c5b127167072aa
+run_name: righteous-shrew-425
+run_uuid: a156b895e1124c0c89c5b127167072aa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759296204197
+status: 4
+tags: []
+user_id: SSAFY
