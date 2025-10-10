@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/SSAFY/Desktop/TIL/ds_lectures/101_offline_sh/4_dl_day4/data_science2_hw_7_2/skeleton/mlruns/236164367301741348/227872c004d945acaed31729ae91302f/artifacts
+end_time: 1760079681829
+entry_point_name: ''
+experiment_id: '236164367301741348'
+lifecycle_stage: active
+run_id: 227872c004d945acaed31729ae91302f
+run_name: bedecked-sponge-176
+run_uuid: 227872c004d945acaed31729ae91302f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1760079681776
+status: 3
+tags: []
+user_id: SSAFY

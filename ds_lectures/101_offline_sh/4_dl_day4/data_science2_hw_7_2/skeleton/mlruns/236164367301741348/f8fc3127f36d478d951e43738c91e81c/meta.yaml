@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/SSAFY/Desktop/TIL/ds_lectures/101_offline_sh/4_dl_day4/data_science2_hw_7_2/skeleton/mlruns/236164367301741348/f8fc3127f36d478d951e43738c91e81c/artifacts
+end_time: 1760079680126
+entry_point_name: ''
+experiment_id: '236164367301741348'
+lifecycle_stage: active
+run_id: f8fc3127f36d478d951e43738c91e81c
+run_name: abundant-asp-518
+run_uuid: f8fc3127f36d478d951e43738c91e81c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1760079679778
+status: 3
+tags: []
+user_id: SSAFY

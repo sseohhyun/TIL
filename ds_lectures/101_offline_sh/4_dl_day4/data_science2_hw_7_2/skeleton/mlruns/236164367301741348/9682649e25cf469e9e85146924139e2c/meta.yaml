@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/SSAFY/Desktop/TIL/ds_lectures/101_offline_sh/4_dl_day4/data_science2_hw_7_2/skeleton/mlruns/236164367301741348/9682649e25cf469e9e85146924139e2c/artifacts
+end_time: 1760079681412
+entry_point_name: ''
+experiment_id: '236164367301741348'
+lifecycle_stage: active
+run_id: 9682649e25cf469e9e85146924139e2c
+run_name: agreeable-shrike-480
+run_uuid: 9682649e25cf469e9e85146924139e2c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1760079681348
+status: 3
+tags: []
+user_id: SSAFY

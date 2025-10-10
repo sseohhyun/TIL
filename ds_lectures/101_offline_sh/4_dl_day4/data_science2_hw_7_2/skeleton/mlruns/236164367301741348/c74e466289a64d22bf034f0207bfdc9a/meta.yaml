@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/SSAFY/Desktop/TIL/ds_lectures/101_offline_sh/4_dl_day4/data_science2_hw_7_2/skeleton/mlruns/236164367301741348/c74e466289a64d22bf034f0207bfdc9a/artifacts
+end_time: 1760079682266
+entry_point_name: ''
+experiment_id: '236164367301741348'
+lifecycle_stage: active
+run_id: c74e466289a64d22bf034f0207bfdc9a
+run_name: bemused-cow-10
+run_uuid: c74e466289a64d22bf034f0207bfdc9a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1760079682199
+status: 3
+tags: []
+user_id: SSAFY

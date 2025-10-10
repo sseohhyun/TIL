@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/SSAFY/Desktop/TIL/ds_lectures/101_offline_sh/4_dl_day4/data_science2_hw_7_2/skeleton/mlruns/236164367301741348/583c9b9c88014db5a07f05261addbd71/artifacts
+end_time: 1760079682349
+entry_point_name: ''
+experiment_id: '236164367301741348'
+lifecycle_stage: active
+run_id: 583c9b9c88014db5a07f05261addbd71
+run_name: kindly-mule-651
+run_uuid: 583c9b9c88014db5a07f05261addbd71
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1760079682286
+status: 3
+tags: []
+user_id: SSAFY

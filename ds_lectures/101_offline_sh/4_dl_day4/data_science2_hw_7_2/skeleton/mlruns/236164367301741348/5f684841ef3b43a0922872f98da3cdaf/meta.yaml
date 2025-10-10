@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/SSAFY/Desktop/TIL/ds_lectures/101_offline_sh/4_dl_day4/data_science2_hw_7_2/skeleton/mlruns/236164367301741348/5f684841ef3b43a0922872f98da3cdaf/artifacts
+end_time: 1760079681238
+entry_point_name: ''
+experiment_id: '236164367301741348'
+lifecycle_stage: active
+run_id: 5f684841ef3b43a0922872f98da3cdaf
+run_name: hilarious-moth-784
+run_uuid: 5f684841ef3b43a0922872f98da3cdaf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1760079681164
+status: 3
+tags: []
+user_id: SSAFY

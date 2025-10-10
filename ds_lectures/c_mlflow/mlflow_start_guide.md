@@ -127,3 +127,90 @@ mlflow run . --env-manager=local -P C=0.3
 ---
 
 
+# MLflow 모델 레지스트리 등록 및 서빙 (Day 2)
+
+## 11. MLflow 서버 실행 (레지스트리 포함)
+
+모델 레지스트리를 사용하려면 `mlflow server` 명령어로 서버를 실행해야 합니다. 서버가 이미 실행 중이라면 생략합니다.
+
+```bash
+cd mlflow_project
+mlflow server --backend-store-uri sqlite:///./mlflow.db --default-artifact-root ./mlruns --host 127.0.0.1 --port 5000
+```
+
+> `mlflow.db`, `mlruns/`는 이전에 사용한 동일 경로여야 모델 등록이 일관되게 동작합니다.
+
+---
+
+### 12. 모델 학습 및 자동 등록
+
+```bash
+cd ~/mlflow_project/src/day2/
+
+# 학습 및 모델 자동 등록
+python train.py
+```
+
+> 학습이 완료되면 MLflow UI (http://localhost:5000)에서 **"Models" 탭 → wine-quality 모델**이 등록된 것을 확인할 수 있습니다.
+
+---
+
+### 13. 모델 서빙 (REST API 형태)
+
+MLflow 모델을 API 서버 형태로 배포합니다.
+
+```bash
+mlflow models serve -m "models:/wine-quality/1" -p 5001 --no-conda
+```
+
+- `models:/wine-quality/1` : 등록된 모델의 이름과 버전  
+- `--no-conda` : 기존 환경 그대로 실행 (가상환경 내 실행 중일 때 사용)  
+- `-p 5001` : 모델 서버는 포트 5001에서 실행
+
+> API는 `http://127.0.0.1:5001/invocations` 로 접근 가능합니다.
+
+---
+
+### 14. 인퍼런스 코드 실행
+
+서빙된 모델에 요청을 보내 예측을 수행합니다.
+
+```bash
+curl -d '{
+  "dataframe_split": {
+    "columns": ["fixed acidity", "volatile acidity", "citric acid", "residual sugar", "chlorides", "free sulfur dioxide", "total sulfur dioxide", "density", "pH", "sulphates", "alcohol"],
+    "data": [[7, 0.27, 0.36, 20.7, 0.045, 45, 170, 1.001, 3, 0.45, 8.8]]
+  }
+}' \
+-H 'Content-Type: application/json' \
+-X POST localhost:5002/invocations
+```
+
+
+```bash
+python inference.py
+```
+
+> 요청 형식은 JSON이며, `inference.py`에서 HTTP POST 요청을 자동 처리합니다.
+
+---
+
+### 15. Day 2 포함 디렉토리 구조
+
+```bash
+~/mlflow_project/
+├── mlflow.db           # 실행 기록용 DB
+├── mlruns/             # 실행 결과 저장
+├── src/
+│   ├── iris_train.ipynb
+│   └── iris_project/
+│       ├── train.py
+│       ├── MLproject
+│       └── conda.yaml
+│
+│   └── day2/
+│       ├── train.py          # 모델 학습 및 등록
+│       ├── inference.py      # 모델 인퍼런스 요청
+```
+
+---

@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/SSAFY/Desktop/TIL/ds_lectures/101_offline_sh/4_dl_day4/data_science2_hw_7_2/skeleton/mlruns/236164367301741348/281ba97708d64819a72387c591a3801a/artifacts
+end_time: 1760079681149
+entry_point_name: ''
+experiment_id: '236164367301741348'
+lifecycle_stage: active
+run_id: 281ba97708d64819a72387c591a3801a
+run_name: auspicious-lark-731
+run_uuid: 281ba97708d64819a72387c591a3801a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1760079681083
+status: 3
+tags: []
+user_id: SSAFY

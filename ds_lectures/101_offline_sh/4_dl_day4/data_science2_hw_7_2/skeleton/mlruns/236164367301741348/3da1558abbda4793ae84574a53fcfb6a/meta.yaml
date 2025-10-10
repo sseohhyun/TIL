@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/SSAFY/Desktop/TIL/ds_lectures/101_offline_sh/4_dl_day4/data_science2_hw_7_2/skeleton/mlruns/236164367301741348/3da1558abbda4793ae84574a53fcfb6a/artifacts
+end_time: 1760079680926
+entry_point_name: ''
+experiment_id: '236164367301741348'
+lifecycle_stage: active
+run_id: 3da1558abbda4793ae84574a53fcfb6a
+run_name: grandiose-owl-157
+run_uuid: 3da1558abbda4793ae84574a53fcfb6a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1760079680836
+status: 3
+tags: []
+user_id: SSAFY

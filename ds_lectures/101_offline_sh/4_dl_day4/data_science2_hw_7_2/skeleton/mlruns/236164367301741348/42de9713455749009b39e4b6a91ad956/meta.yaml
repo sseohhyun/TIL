@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/SSAFY/Desktop/TIL/ds_lectures/101_offline_sh/4_dl_day4/data_science2_hw_7_2/skeleton/mlruns/236164367301741348/42de9713455749009b39e4b6a91ad956/artifacts
+end_time: 1760079681514
+entry_point_name: ''
+experiment_id: '236164367301741348'
+lifecycle_stage: active
+run_id: 42de9713455749009b39e4b6a91ad956
+run_name: painted-crow-110
+run_uuid: 42de9713455749009b39e4b6a91ad956
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1760079681430
+status: 3
+tags: []
+user_id: SSAFY

@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/SSAFY/Desktop/TIL/ds_lectures/101_offline_sh/4_dl_day4/data_science2_hw_7_2/skeleton/mlruns/236164367301741348/c9183c19fcf54c80829c59d3622ca04b/artifacts
+end_time: 1760079680378
+entry_point_name: ''
+experiment_id: '236164367301741348'
+lifecycle_stage: active
+run_id: c9183c19fcf54c80829c59d3622ca04b
+run_name: smiling-fish-970
+run_uuid: c9183c19fcf54c80829c59d3622ca04b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1760079680297
+status: 3
+tags: []
+user_id: SSAFY

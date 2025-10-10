@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/SSAFY/Desktop/TIL/ds_lectures/101_offline_sh/4_dl_day4/data_science2_hw_7_2/skeleton/mlruns/236164367301741348/9df489c5fcba4bbd8a67b916aad84a64/artifacts
+end_time: 1760079681917
+entry_point_name: ''
+experiment_id: '236164367301741348'
+lifecycle_stage: active
+run_id: 9df489c5fcba4bbd8a67b916aad84a64
+run_name: powerful-penguin-948
+run_uuid: 9df489c5fcba4bbd8a67b916aad84a64
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1760079681847
+status: 3
+tags: []
+user_id: SSAFY
