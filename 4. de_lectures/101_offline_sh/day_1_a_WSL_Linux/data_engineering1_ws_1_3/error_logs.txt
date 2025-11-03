@@ -1,0 +1,3 @@
+[ERROR] Failed to mount disk
+[ERROR] Disk read error
+[ERROR] Disk write error

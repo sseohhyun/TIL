@@ -1,0 +1,3 @@
+[ERROR] Disk read error
+[ERROR] Disk write error
+[Disk] Disk scan complete
