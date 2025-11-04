@@ -1,0 +1,15 @@
+version: "3"  # 도커 컴포즈 버전 설정
+
+services:
+  # 첫 번째 서비스: nginx 웹 서버
+  web:
+    image: nginx  # nginx 이미지를 사용하여 컨테이너 생성
+    container_name: web  # 컨테이너 이름을 'web'으로 지정
+    ports:
+      - "8080:80"  # 호스트의 8080 포트를 컨테이너의 80 포트에 연결 (웹 확인 가능)
+
+  # 두 번째 서비스: alpine 기반 테스트용 컨테이너
+  api:
+    image: alpine  # 가벼운 리눅스 배포판
+    container_name: api  # 컨테이너 이름을 'api'로 지정
+    command: ["sleep", "infinity"]  # 무한 대기 상태로 유지 (컨테이너가 꺼지지 않도록 함)
