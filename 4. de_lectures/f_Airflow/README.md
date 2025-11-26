@@ -301,3 +301,40 @@ chmod +x ./plugins/shell/select_fruit.sh
 sudo apt install dos2unix
 sudo dos2unix plugins/shell/select_fruit.sh
 ```
+
+---
+
+# chapter 3
+
+## 12. Postgres Hook 테스트
+
+Airflow에서 PostgresHook를 통해 별도 Postgres DB와 연결을 확인하는 실습을 진행합니다.
+
+### 12-1) Postgres 컨테이너 실행
+
+- `docker-compose.yml`에 `postgres-db` 서비스를 추가합니다.  
+- 기본 설정: `user=ssafyuser`, `password=ssafy`, `db=ssafydb`, 포트 `5432`  
+- 로컬 PC에서 이미 `5432` 포트를 사용 중이면 `5442:5432` 등으로 바꿔야 합니다.  
+- Airflow 컨테이너에서 접근할 때는 항상 **호스트명 `postgres-db`, 포트 `5432`** 로 접속해야 합니다.
+
+### 12-2) Airflow Connection 등록
+
+`PostgresHook(postgres_conn_id="my_postgres_conn")`가 실행되려면, **Connection ID = `my_postgres_conn`** 이 Airflow에 미리 등록되어야 합니다.
+
+1. **Airflow Web UI → Admin → Connections → + 버튼** (Airflow가 같은 shared_net을 공유하므로 내부 포트를 활용)
+   - Conn Id: `my_postgres_conn`  
+   - Conn Type: `Postgres`  
+   - Host: `postgres-db`  
+   - Database: `ssafydb`  
+   - Login: `ssafyuser`  
+   - Password: `ssafy`  
+   - Port: `5432`
+
+2. 프로젝트 진행하면서 만들며 구성해놓은 로컬 PostgreSQL로 테스트 하고 싶은 경우
+   - Conn Id: `my_postgres_conn2`  
+   - Conn Type: `Postgres`  
+   - Host: `host.docker.internal`  
+   - Database: `news`  
+   - Login: `ssafyuser`  
+   - Password: `ssafy`  
+   - Port: `5442`
