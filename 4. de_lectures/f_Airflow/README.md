@@ -338,3 +338,180 @@ Airflow에서 PostgresHook를 통해 별도 Postgres DB와 연결을 확인하�
    - Login: `ssafyuser`  
    - Password: `ssafy`  
    - Port: `5442`
+
+---
+
+# chapter 4
+
+## 13. Spark 연계를 위한 docker-compose 변경사항 정리
+
+`docker-compose.yml` 파일을, 스파크와 연계해서 활용하기 위해서 추가된 코드와 변경 이유를 정리한 문서입니다.
+해당되는 새로운 docker-compose 파일은 디렉토리에 업로드되어 있으니 spark와 연계 사용을 위해서는 이 파일을 사용하기를 권장합니다.
+
+---
+
+### 13-1) Airflow Image → Dockerfile Build 변경
+- 해당 파일은 chapter4의 docker-compose-spark.yaml로 제공되어 있습니다.
+- 파일명에 맞게 docker compose -f docker-compose-spark.yaml up을 통해서 컨테이너들을 띄울 수 있습니다.
+
+**변경 전:**
+```yaml
+image: ${AIRFLOW_IMAGE_NAME:-apache/airflow:2.10.5}
+# build: .
+```
+
+**변경 후:**
+```yaml
+# image: ${AIRFLOW_IMAGE_NAME:-apache/airflow:2.10.5}
+build:
+  context: .
+  dockerfile: Dockerfile.airflow
+```
+
+**변경 이유:**
+- spark와의 연결을 위해 직접 Dockerfile을 관리하며 커스터마이징 필요해짐에 따라 새로 구축
+- 필요 패키지 설치 (ex: pyspark, matplotlib 등) 및 Java 환경 구축을 위해 빌드 방식 변경.
+- 해당 이미지는 project 등에서 활용할 수 있도록 패키지를 이미지 상에서 조정하여 컨테이너를 띄울 수 있도록 설정.
+
+---
+
+### 13-2) JAVA_HOME 환경변수 추가
+
+**추가된 코드:**
+```yaml
+JAVA_HOME: /usr/lib/jvm/java-17-openjdk-amd64
+```
+
+**추가 이유:**
+- Spark 작업 실행을 위해 Java 환경변수 명시.
+- 기본적으로 해당 bitnami/spark:3.5.4에서는 java 17을 지원하여 17 사용
+
+---
+
+### 13-3) 볼륨 추가 (scripts, data, output)
+
+**추가된 코드:**
+```yaml
+- ${AIRFLOW_PROJ_DIR:-.}/dags/scripts:/opt/airflow/dags/scripts
+- ${AIRFLOW_PROJ_DIR:-.}/data:/opt/airflow/data
+- ${AIRFLOW_PROJ_DIR:-.}/output:/opt/shared/output
+```
+
+**추가 이유:**
+- Spark 작업 스크립트(`scripts`) 관리, 데이터(`data`) 저장, 결과물(`output`) 저장을 위한 경로 추가.
+- Airflow와 Spark 내부, 그리고 로컬에서의 공유를 원활히 하기 위함.
+
+변경 사항을 적용하기 위해서 setup.sh를 먼저 실행하세요.
+---
+
+### 13-4) 폴더 권한 설정
+
+컨테이너가 결과물을 `output` 폴더에 기록하고 `data` 폴더에서 읽을 수 있도록 소유권/퍼미션 설정이 필요합니다.
+
+#### 개념
+- **소유자(owner)**: 해당 파일/폴더의 주인. 수정, 실행 권한을 결정.
+- **그룹(group)**: 같은 그룹에 속한 사용자들이 공유하는 권한.
+- **권한(permission)**: 읽기(r), 쓰기(w), 실행(x) 권한을 소유자/그룹/기타 사용자에게 부여.
+
+#### 설정
+```bash
+# 개발용으로 전체 권한 열기 (실제 운영 환경에서는 권장 X)
+sudo chmod -R 777 output data
+```
+
+---
+
+### 13-5) 네트워크 설정 추가
+
+**추가된 코드:**
+```yaml
+networks:
+  airflow:
+    driver: bridge
+```
+
+**서비스별 추가:**
+```yaml
+networks:
+  - airflow
+```
+
+**추가 이유:**
+- 모든 서비스 간 안정적 통신을 위해 별도 `airflow` 네트워크 생성 및 연결하여 컨테이너간 통신 이슈를 없애기 위함.
+- 컨테이너 DNS 이름(`spark-master` 등)으로 쉽게 통신 가능.
+
+---
+
+### 13-6) Spark Master/Worker 서비스 추가
+
+**추가된 서비스:**
+
+**spark-master:**
+```yaml
+  spark-master:
+    build:
+      context: .
+      dockerfile: Dockerfile.spark
+    container_name: spark-master
+    environment:
+      - SPARK_MODE=master
+      - SPARK_MASTER_HOST=spark-master 
+      - SPARK_RPC_AUTHENTICATION_ENABLED=no
+      - SPARK_RPC_ENCRYPTION_ENABLED=no
+      - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
+      - SPARK_SSL_ENABLED=no
+    ports:
+      - "8083:8080"
+      - "7077:7077"
+    networks:
+      - airflow
+    command: /bin/bash -c "/opt/spark/sbin/start-master.sh && tail -f /dev/null"
+
+    volumes:  
+      - ${AIRFLOW_PROJ_DIR:-.}/dags/scripts:/opt/airflow/dags/scripts
+      - ${AIRFLOW_PROJ_DIR:-.}/data:/opt/airflow/data
+      - ${AIRFLOW_PROJ_DIR:-.}/output:/opt/shared/output
+```
+
+**spark-worker:**
+```yaml
+  spark-worker:
+    build:
+      context: .
+      dockerfile: Dockerfile.spark
+    container_name: spark-worker
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://spark-master:7077
+    depends_on:
+      - spark-master
+    ports:
+      - "8084:8081"
+    networks:
+      - airflow
+    command: /bin/bash -c "sleep 5; /opt/spark/sbin/start-worker.sh $${SPARK_MASTER_URL} && tail -f /dev/null"
+    volumes:  
+      - ${AIRFLOW_PROJ_DIR:-.}/dags/scripts:/opt/airflow/dags/scripts
+      - ${AIRFLOW_PROJ_DIR:-.}/data:/opt/airflow/data
+      - ${AIRFLOW_PROJ_DIR:-.}/output:/opt/shared/output
+```
+
+**추가 이유:**
+- Airflow DAG 내에서 SparkSubmitOperator를 통해 Spark 잡 실행 가능하게 하기 위해 Master/Worker 클러스터 추가.
+- 데이터 처리 파이프라인을 Airflow와 Spark로 연동하는 구조.
+
+---
+
+### 13-7) 기타 환경변수 정리
+
+- `_PIP_ADDITIONAL_REQUIREMENTS` 환경변수 주석처리.
+
+**변경 이유:**
+- 필요한 라이브러리는 Dockerfile에서 설치하도록 변경했기 때문에 컨테이너 실행 시 추가 설치 불필요.
+- docker image 자체에서 추가해놓으면 한 번 빌드하면 실행할 때마다 설치하지 않음.
+
+---
+
+
+
+
