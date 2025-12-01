@@ -1,0 +1,6 @@
+{"index": {"_index": "products", "_id": "4"}}
+{"product_name": "Samsung Smart Oven", "brand": "Samsung", "release_date": "2025-04-10", "price": 899.99}
+{"index": {"_index": "products", "_id": "5"}}
+{"product_name": "LG OLED evo TV 77''", "brand": "LG", "release_date": "2024-11-25", "price": 3499.99}
+{"index": {"_index": "products", "_id": "6"}}
+{"product_name": "Samsung Jet Bot AI+ Robot Vacuum", "brand": "Samsung", "release_date": "2025-02-15", "price": 1299.99}
