@@ -8,7 +8,7 @@ import os
 import subprocess
 
 # 클론 받을 디렉토리 지정
-clone_dir = r'C:\Users\김기령\Desktop\서현\TIL\4. de_lectures\101_offline_sh\day_17_g_Elasticsearch'
+clone_dir = r'C:\Users\김기령\Desktop\서현\TIL\4. de_lectures\101_offline_sh\day_18_g_Elasticsearch'
 
 # 디렉토리가 없으면 생성
 os.makedirs(clone_dir, exist_ok=True)
