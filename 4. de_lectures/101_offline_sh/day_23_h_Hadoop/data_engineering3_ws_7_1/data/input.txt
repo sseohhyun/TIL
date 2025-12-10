@@ -1,0 +1,3 @@
+hadoop hadoop hdfs mapreduce mapreduce mapreduce
+wordcount hadoop mapreduce shuffle reduce output
+key value key value key key key value

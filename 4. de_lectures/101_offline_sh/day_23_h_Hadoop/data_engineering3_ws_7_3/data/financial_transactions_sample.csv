@@ -1,0 +1,51 @@
+Transaction ID,Timestamp,Description,Amount
+TX10001,2025-02-25 0:06,Walmart Grocery,$194.52 
+TX10002,2025-02-21 3:47,Amazon Purchase,$71.49 
+TX10003,2025-02-13 1:49,CVS Pharmacy,$29.59 
+TX10004,2025-02-16 8:02,Costco Wholesale,$229.96 
+TX10005,2025-02-21 20:44,Ebay Shopping,$77.20 
+TX10006,2025-02-24 8:10,Google Play Subscription,$7.72 
+TX10007,2025-02-09 15:00,Netflix Subscription Monthly,$267.30 
+TX10008,2025-03-05 8:26,Walmart Grocery,$101.04 
+TX10009,2025-02-28 22:53,Samsung Electronics,$45.90 
+TX10010,2025-02-26 3:40,Disney+ Monthly,$265.93 
+TX10011,2025-03-05 14:19,Uber Ride,$165.97 
+TX10012,2025-02-10 21:34,Spotify Premium,$293.01 
+TX10013,2025-03-02 3:07,Samsung Electronics,$271.34 
+TX10014,2025-02-19 13:05,Shell Gasoline,$45.09 
+TX10015,2025-02-25 13:06,Uber Ride,$213.29 
+TX10016,2025-02-27 1:33,Costco Wholesale,$85.65 
+TX10017,2025-03-03 12:37,Netflix Subscription Monthly,$166.52 
+TX10018,2025-03-01 6:40,Disney+ Monthly,$249.66 
+TX10019,2025-03-06 17:09,Target Store Purchase,$134.13 
+TX10020,2025-02-09 11:14,Costco Wholesale,$100.63 
+TX10021,2025-02-18 15:27,Steam Game Purchase,$7.90 
+TX10022,2025-02-27 16:44,Spotify Premium,$198.81 
+TX10023,2025-02-27 2:45,Apple Store Purchase,$195.08 
+TX10024,2025-02-25 1:43,PlayStation Network,$96.64 
+TX10025,2025-02-11 5:32,Costco Wholesale,$191.16 
+TX10026,2025-03-01 18:53,Google Play Subscription,$295.39 
+TX10027,2025-02-12 21:11,Nike Store,$102.69 
+TX10028,2025-02-26 22:33,Netflix Subscription Monthly,$276.61 
+TX10029,2025-02-26 10:32,Amazon Purchase,$157.76 
+TX10030,2025-03-03 8:31,Samsung Electronics,$187.33 
+TX10031,2025-02-11 2:36,McDonald's Meal,$191.75 
+TX10032,2025-02-21 19:34,Adobe Creative Cloud,$93.87 
+TX10033,2025-02-19 6:44,Target Store Purchase,$72.82 
+TX10034,2025-02-24 1:20,Apple Store Purchase,$41.75 
+TX10035,2025-03-09 9:09,Walmart Grocery,$224.02 
+TX10036,2025-02-25 18:21,McDonald's Meal,$132.09 
+TX10037,2025-02-20 10:25,Walmart Grocery,$252.50 
+TX10038,2025-03-06 21:09,Shell Gasoline,$295.25 
+TX10039,2025-02-20 0:33,CVS Pharmacy,$6.80 
+TX10040,2025-03-03 5:39,Adobe Creative Cloud,$212.76 
+TX10041,2025-02-07 22:59,Nike Store,$129.12 
+TX10042,2025-02-13 20:40,Expedia Travel,$113.41 
+TX10043,2025-03-02 20:04,Google Play Subscription,$267.88 
+TX10044,2025-02-26 1:10,Disney+ Monthly,$18.13 
+TX10045,2025-02-27 9:11,Nike Store,$118.42 
+TX10046,2025-02-25 14:27,McDonald's Meal,$273.72 
+TX10047,2025-02-18 16:09,Expedia Travel,$148.41 
+TX10048,2025-03-06 5:08,Samsung Electronics,$246.64 
+TX10049,2025-02-16 4:24,Expedia Travel,$157.60 
+TX10050,2025-02-26 22:07,McDonald's Meal,$42.59 

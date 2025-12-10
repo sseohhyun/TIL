@@ -299,13 +299,3 @@ docker compose up -d
 | DataNode2 | http://localhost:9865 |
 
 ---
-
-# 7. 요약
-
-- Docker 기반 Hadoop 완전 자동화 클러스터  
-- NameNode 1개 + DataNode 2개  
-- replication=2  
-- YARN + MapReduce 완전 구성  
-- entrypoint.sh 통한 자동 부팅  
-- 교육/실습/개발 환경에 최적화  
-
